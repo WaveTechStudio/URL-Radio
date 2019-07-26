@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion project.ext.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId project.ext.applicationId
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+
+        vectorDrawables.useSupportLibrary = true
+        resConfigs "en", "de"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.palette:palette:$paletteVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
+    implementation "androidx.media:media:$mediaVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime:$livecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-extensions:$livecycleVersion"
+
+    implementation "com.google.android.material:material:$materialVersion"
+
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoPlayerVersion"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$exoPlayerVersion"
+
+}

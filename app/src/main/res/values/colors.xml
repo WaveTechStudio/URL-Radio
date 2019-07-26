@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_window_background">@color/urlradio_white</color>
+    <color name="status_bar_background">@color/urlradio_white</color>
+    <color name="app_onboarding_icons">@color/urlradio_grey_dark</color>
+
+    <color name="player_sheet_background_main">@color/urlradio_grey_darker</color>
+    <color name="player_sheet_background_main_border">@color/urlradio_grey_darker</color>
+    <color name="player_sheet_text_main">@color/urlradio_white</color>
+    <color name="player_sheet_background_details">@color/urlradio_grey_dark</color>
+    <color name="player_sheet_text_details">@color/urlradio_white</color>
+    <color name="player_button_background">@color/urlradio_red</color>
+
+    <color name="list_item_background">@color/urlradio_white</color>
+    <color name="list_item_background_selected">@color/urlradio_grey_very_light</color>
+    <color name="list_item_divider">@color/urlradio_grey_very_light</color>
+
+    <color name="station_image_background">@color/urlradio_grey_lighter</color>
+
+    <color name="urlradio_grey">#FF5F6368</color>
+    <color name="urlradio_grey_light">#FFBDC1C6</color>
+    <color name="urlradio_grey_lighter">#FFD2D6DA</color>
+    <color name="urlradio_grey_very_light">#FFF1F3F4</color>
+	
+    <color name="urlradio_grey_dark">#FF3C4043</color>
+    <color name="urlradio_grey_darker">#FF17181A</color>
+
+    <color name="urlradio_red">#FFDC3D33</color>
+    <color name="urlradio_red_light">#FFF44336</color>
+    <color name="urlradio_red_dark">#FFE53935</color>
+    <color name="urlradio_red_darker">#FFD32F2F</color>
+
+    <color name="urlradio_black">#FF000000</color>
+    <color name="urlradio_white">#FFFFFFFF</color>
+    <color name="urlradio_transparent">#00ffffff</color>
+
+</resources>
