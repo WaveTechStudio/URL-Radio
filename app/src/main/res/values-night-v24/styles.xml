@@ -16,6 +16,9 @@
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">@color/status_bar_background</item>
 
+        <!-- Set navigation bar color -->
+        <item name="android:navigationBarColor">@color/navigation_bar_background</item>
+
         <!-- Default window background used for resizing on v24 -->
         <item name="android:windowBackgroundFallback">@color/urlradio_grey_dark</item>
 

@@ -3,6 +3,7 @@
 
     <color name="app_window_background">#ff232323</color>
     <color name="status_bar_background">#ff232323</color>
+    <color name="navigation_bar_background">#ff191919</color>
     <color name="app_onboarding_icons">@color/urlradio_grey_very_light</color>
 
     <color name="player_sheet_background_main">#ff191919</color>
