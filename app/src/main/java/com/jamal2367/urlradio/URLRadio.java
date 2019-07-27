@@ -33,7 +33,6 @@ public class URLRadio extends Application {
         super.onCreate();
 
         // set Day / Night theme state
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         NightModeHelper.restoreSavedState(this);
 
 // todo remove
