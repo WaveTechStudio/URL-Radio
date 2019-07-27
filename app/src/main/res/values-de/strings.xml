@@ -16,7 +16,7 @@
     <string name="descr_station_options_button">Optionen</string>
     <string name="descr_station_name_example">FM-Beispiel</string>
     <string name="descr_station_metadata_example">Interpret - Titel</string>
-    <string name="descr_station_stream_loading">Lade Stream …</string>
+    <string name="descr_station_stream_loading">Lade Stream...</string>
     <string name="descr_playback_button_play">Abspielen</string>
     <string name="descr_playback_button_stop">Stopp</string>
     <string name="descr_playback_indicator">Playback Status</string>
@@ -41,18 +41,18 @@
     <string name="dialog_add_station_button">Hinzufügen</string>
     <string name="dialog_add_station_input_hint">Streaming-Adresse einfügen</string>
     <string name="dialog_add_station_message">Neuen Sender hinzufügen</string>
-    <string name="dialog_add_station_howto">Sie können Audiostreams in den Formaten MP3, AAC und Ogg/Opus sowie Streaming-Dateien mit den Endungen .PLS und .M3U hinzufügen. Alternativ können Sie einen neuen Sender auch hinzufügen, indem Sie auf Streaming-Links (.pls oder .m3u) im Web klicken.</string>
+    <string name="dialog_add_station_howto">Sie können Audiostreams in den Formaten MP3, AAC und OGG/OPUS sowie Streaming-Dateien mit den Endungen .PLS und .M3U hinzufügen. Alternativ können Sie einen neuen Sender auch hinzufügen, indem Sie eine Streaming URL (.pls oder .m3u) eingeben.</string>
     <string name="dialog_delete_station_message">Sender löschen</string>
     <string name="dialog_button_delete">Löschen</string>
-    <string name="dialog_rename_station_input_hint">Bitte neuen Namen eingeben</string>
+    <string name="dialog_rename_station_input_hint">Bitte neuen Namen eingeben.</string>
     <string name="dialog_rename_station_message">Sender umbenennen</string>
     <string name="dialog_button_rename">Umbenennen</string>
-    <string name="dialog_add_station_choose_stream_heading">Mehrere Streaming-Adressen gefunden</string>
-    <string name="dialog_add_station_choose_stream_message">Bitte eine Streaming-Adresse auswählen</string>
+    <string name="dialog_add_station_choose_stream_heading">Mehrere Streaming-Adressen gefunden!</string>
+    <string name="dialog_add_station_choose_stream_message">Bitte eine Streaming-Adresse auswählen!</string>
     <string name="dialog_add_station_choose_stream_button">Auswählen</string>
     <!-- error dialogs -->
     <string name="dialog_error_title_default">Fehler</string>
-    <string name="dialog_error_message_default">Ein Fehler ist aufgetreten</string>
+    <string name="dialog_error_message_default">Ein Fehler ist aufgetreten!</string>
     <string name="dialog_error_details_button_default">Details anzeigen</string>
     <string name="dialog_error_details_default">Keine Detailinformationen vorhanden</string>
     <string name="dialog_error_details_write">Der Radiosender ist eventuell schon vorhanden oder es gibt ein Problem mit dem externen Speicher.</string>
@@ -70,15 +70,15 @@
     <string name="dialog_error_message_fetch_read_file_location">Speicherort:</string>
     <string name="dialog_error_message_fetch_write">URL Radio hat es versucht, kann diese Datei aber nicht speichern.</string>
     <!-- messages -->
-    <string name="toastmessage_add_download_started">Download gestartet.</string>
+    <string name="toastmessage_add_download_started">Download gestartet!</string>
     <string name="toastmessage_add_open_file_started">Öffne Datei.</string>
-    <string name="toastmessage_long_press_playback_stopped">Wiedergabe gestoppt</string>
-    <string name="toastmessage_long_press_playback_started">Wiedergabe gestartet</string>
+    <string name="toastmessage_long_press_playback_stopped">Wiedergabe gestoppt!</string>
+    <string name="toastmessage_long_press_playback_started">Wiedergabe gestartet!</string>
     <string name="toastmessage_long_press_change_icon">Symbol ändern</string>
     <string name="toastmessage_long_press_change_name">Sender umbenennen</string>
     <string name="toastmessage_theme_night">Dunkelmodus aktiviert!</string>
     <string name="toastmessage_theme_day">Tagmodus aktiviert!</string>
-    <string name="toastmessage_theme_follow_system">Theme nach System aktiviert!</string>
+    <string name="toastmessage_theme_follow_system">Tag/Nacht Modus aktiviert. Dies wird ab Android Pie (API 28+) unterstützt. Aktiviere den Nachtmodus in den Entwickleroptionen.</string>
     <string name="toastmessage_shortcut_created">Sender auf Startbildschirm platziert.</string>
     <string name="toastmessage_shortcut_not_created">Sender nicht auf Startbildschirm platziert. Das Gerät unterbindet das Platzieren von Verknüpfungen.</string>
     <string name="toastmessage_list_refreshed">Aktualisiere Senderliste.</string>
@@ -86,10 +86,10 @@
     <string name="toastmessage_copied_to_clipboard_metadata">Metadaten in die Zwischenablage kopiert.</string>
     <string name="toastmessage_station_copied">Sender in die Zwischenablage kopiert.</string>
     <string name="toastmessage_stream_may_not_work">Nicht unterstütztes Audioformat gefunden. Stream kann möglicherweise nicht abgespielt werden.</string>
-    <string name="toastmessage_timer_activated">Sleeptimer aktiviert.</string>
-    <string name="toastmessage_timer_cancelled">Sleeptimer deaktiviert.</string>
-    <string name="toastmessage_timer_duration_increased">Sleeptimer verlängert.</string>
-    <string name="toastmessage_timer_start_unable">Bitte zuerst Wiedergabe starten.</string>
+    <string name="toastmessage_timer_activated">Sleep Timer aktiviert!</string>
+    <string name="toastmessage_timer_cancelled">Sleep Timer deaktiviert!</string>
+    <string name="toastmessage_timer_duration_increased">Sleep Timer verlängert!</string>
+    <string name="toastmessage_timer_start_unable">Bitte zuerst die Wiedergabe starten.</string>
     <string name="toastalert_unable_to_connect">Verbindung fehlgeschlagen. Gerät hat keine Verbindung zum Internet oder Stream ist möglicherweise veraltet.</string>
     <string name="toastalert_rename_unsuccessful">Sender kann nicht umbenannt werden. Bitte wählen Sie einen anderen Namen.</string>
     <string name="toastalert_delete_successful">Die Sender wurde entfernt.</string>
@@ -99,7 +99,7 @@
     <string name="toastalert_permission_denied">Fehlende Berechtigung:</string>
     <string name="toastalert_station_not_found">Sender kann nicht gefunden werden.</string>
     <string name="snackbar_request_storage_access">URL Radio benötigt Lese-Rechte, um auf Dateien auf dem externen Speicher zugreifen zu können.</string>
-    <string name="snackbar_message_timer_set">Sleeptimer eingestellt auf</string>
+    <string name="snackbar_message_timer_set">Sleep Timer eingestellt auf</string>
     <!-- notification -->
     <string name="notification_play">Wiedergabe</string>
     <string name="notification_stop">Stopp</string>
