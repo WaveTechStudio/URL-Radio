@@ -161,7 +161,7 @@ public final class NightModeHelper implements URLRadioKeys {
 
     /* Load state of Night Mode */
     private static int loadNightModeState(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context).getInt(PREF_NIGHT_MODE_STATE, AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+        return PreferenceManager.getDefaultSharedPreferences(context).getInt(PREF_NIGHT_MODE_STATE, AppCompatDelegate.MODE_NIGHT_YES);
     }
 
 }
