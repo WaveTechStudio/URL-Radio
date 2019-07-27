@@ -5,7 +5,7 @@
     <!-- app shortcuts -->
     <string name="shortcut_last_station_short_label">Letzter Sender</string>
     <string name="shortcut_last_station_long_label">Wiedergabe letzter Sender</string>
-    <string name="shortcut_last_station_disabled_message">Shortcut für Wiedergabe des letzten Senders deaktiviert.</string>
+    <string name="shortcut_last_station_disabled_message">Shortcut für Wiedergabe des letzten Senders deaktiviert!</string>
     <!-- menu entries -->
     <string name="menu_icon">Symbol ändern</string>
     <string name="menu_delete">Löschen</string>
@@ -41,7 +41,7 @@
     <string name="dialog_add_station_button">Hinzufügen</string>
     <string name="dialog_add_station_input_hint">Streaming-Adresse einfügen</string>
     <string name="dialog_add_station_message">Neuen Sender hinzufügen</string>
-    <string name="dialog_add_station_howto">Sie können Audiostreams in den Formaten MP3, AAC und OGG/OPUS sowie Streaming-Dateien mit den Endungen .PLS und .M3U hinzufügen. Alternativ können Sie einen neuen Sender auch hinzufügen, indem Sie eine Streaming URL (.pls oder .m3u) eingeben.</string>
+    <string name="dialog_add_station_howto">Sie können Audiostreams in den Formaten MP3, AAC und OGG/OPUS sowie Streaming-Dateien mit den Endungen .PLS und .M3U hinzufügen.</string>
     <string name="dialog_delete_station_message">Sender löschen</string>
     <string name="dialog_button_delete">Löschen</string>
     <string name="dialog_rename_station_input_hint">Bitte neuen Namen eingeben.</string>
