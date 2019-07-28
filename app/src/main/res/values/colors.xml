@@ -33,7 +33,13 @@
     <color name="urlradio_red_darker">#FFD32F2F</color>
 
     <color name="urlradio_black">#FF000000</color>
+	
+    <color name="urlradio_dark">#FF232323</color>
+    <color name="urlradio_dark_middle">#FF212121</color>
+    <color name="urlradio_darker">#FF191919</color>
+	
     <color name="urlradio_white">#FFFFFFFF</color>
-    <color name="urlradio_transparent">#00ffffff</color>
+	
+    <color name="urlradio_transparent">#00FFFFFF</color>
 
 </resources>
