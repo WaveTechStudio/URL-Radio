@@ -15,7 +15,7 @@
 
     <color name="list_item_background">#ff232323</color>
     <color name="list_item_background_selected">#ff212121</color>
-    <color name="list_item_divider">#ff232323</color>
+    <color name="list_item_divider">#ff191919</color>
 
     <color name="station_image_background">@color/urlradio_grey_light</color>
 
