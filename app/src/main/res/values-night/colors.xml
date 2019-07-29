@@ -13,7 +13,7 @@
     <color name="player_sheet_text_details">@color/urlradio_white</color>
     <color name="player_button_background">@color/urlradio_red_dark</color>
 
-    <color name="list_item_background">@color/urlradio_dark_middle</color>
+    <color name="list_item_background">@color/urlradio_dark</color>
     <color name="list_item_background_selected">@color/urlradio_dark_middle</color>
     <color name="list_item_divider">@color/urlradio_darker</color>
 
