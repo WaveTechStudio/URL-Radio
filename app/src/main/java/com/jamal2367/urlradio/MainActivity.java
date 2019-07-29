@@ -237,7 +237,7 @@ public final class MainActivity extends AppCompatActivity implements URLRadioKey
             // update list
             newStationList.set(stationID, newStation);
 
-            // update liva data station from PlayerService - used in MainActivityFragment
+            // update live data station from PlayerService - used in MainActivityFragment
             mCollectionViewModel.getPlayerServiceStation().setValue(newStation);
 
             // update live data list of stations - used in CollectionAdapter
@@ -373,7 +373,7 @@ public final class MainActivity extends AppCompatActivity implements URLRadioKey
             int stationID = StationListHelper.findStationId(mStationList, mTempStation.getStreamUri());
             newStationList.set(stationID, newStation);
 
-            // update liva data station from PlayerService
+            // update live data station from PlayerService
             mCollectionViewModel.getPlayerServiceStation().setValue(newStation);
 
             // update live data
