@@ -70,27 +70,20 @@
     <string name="dialog_error_message_fetch_read_file_location">Speicherort:</string>
     <string name="dialog_error_message_fetch_write">URL Radio hat es versucht, kann diese Datei aber nicht speichern!</string>
     <!-- messages -->
-    <string name="toastmessage_add_download_started">Download gestartet!</string>
+    <string name="toastmessage_add_download_started">Hole Informationen!</string>
     <string name="toastmessage_add_open_file_started">Öffne Datei.</string>
-    <string name="toastmessage_long_press_playback_stopped">Wiedergabe gestoppt!</string>
-    <string name="toastmessage_long_press_playback_started">Wiedergabe gestartet!</string>
-    <string name="toastmessage_long_press_change_icon">Symbol ändern</string>
-    <string name="toastmessage_long_press_change_name">Sender umbenennen</string>
-    <string name="toastmessage_theme_night">Dunkelmodus aktiviert!</string>
+    <string name="toastmessage_theme_night">Nachtmodus aktiviert!</string>
     <string name="toastmessage_theme_day">Tagmodus aktiviert!</string>
     <string name="toastmessage_theme_follow_system">Tag/Nacht Modus aktiviert. Dies wird ab Android Pie (API 28+) unterstützt. Aktiviere den Nachtmodus in den Entwickleroptionen.</string>
-    <string name="toastmessage_shortcut_created">Sender auf Startbildschirm platzieren.</string>
     <string name="toastmessage_shortcut_not_created">Sender nicht auf Startbildschirm platziert. Das Gerät unterbindet das Platzieren von Verknüpfungen!</string>
-    <string name="toastmessage_list_refreshed">Aktualisiere Senderliste!</string>
     <string name="toastmessage_copied_to_clipboard_url">Streaming-Adresse in die Zwischenablage kopiert.</string>
     <string name="toastmessage_copied_to_clipboard_metadata">Metadaten in die Zwischenablage kopiert.</string>
     <string name="toastmessage_station_copied">Sender in die Zwischenablage kopiert.</string>
     <string name="toastmessage_stream_may_not_work">Nicht unterstütztes Audioformat gefunden. Stream kann möglicherweise nicht abgespielt werden!</string>
-    <string name="toastmessage_timer_activated">Sleep Timer aktiviert!</string>
-    <string name="toastmessage_timer_cancelled">Sleep Timer deaktiviert!</string>
-    <string name="toastmessage_timer_duration_increased">Sleep Timer verlängert!</string>
+    <string name="toastmessage_timer_cancelled">Einschlafautomatik deaktiviert.</string>
+    <string name="toastmessage_timer_duration_increased">Sleep Timer verlängert.</string>
     <string name="toastmessage_timer_start_unable">Bitte zuerst die Wiedergabe starten!</string>
-    <string name="toastalert_unable_to_connect">Verbindung fehlgeschlagen. Gerät hat keine Verbindung zum Internet oder Stream ist möglicherweise veraltet!</string>
+    <string name="toastalert_unable_to_connect">Verbindung fehlgeschlagen. Gerät hat keine Verbindung zum Internet oder der Stream ist möglicherweise veraltet!</string>
     <string name="toastalert_rename_unsuccessful">Sender kann nicht umbenannt werden. Bitte wählen Sie einen anderen Namen!</string>
     <string name="toastalert_delete_successful">Der Sender wurde entfernt!</string>
     <string name="toastalert_no_external_storage">Zugriff auf den externen Speicher nicht möglich!</string>
@@ -99,7 +92,7 @@
     <string name="toastalert_permission_denied">Fehlende Berechtigung:</string>
     <string name="toastalert_station_not_found">Sender kann nicht gefunden werden!</string>
     <string name="snackbar_request_storage_access">URL Radio benötigt Lese-Rechte, um auf Dateien auf dem externen Speicher zugreifen zu können!</string>
-    <string name="snackbar_message_timer_set">Sleep Timer eingestellt auf</string>
+    <string name="snackbar_message_timer_set">Einschlafautomatik eingestellt auf</string>
     <!-- notification -->
     <string name="notification_play">Wiedergabe</string>
     <string name="notification_stop">Stopp</string>
