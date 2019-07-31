@@ -130,7 +130,7 @@ public interface URLRadioKeys {
 
 
     /* MISC */
-    long FIFTEEN_MINUTES = 900000; // equals 15 minutes
+    long FIVE_MINUTES = 300000; // equals 5 minutes
     int PLAYER_SERVICE_NOTIFICATION_ID = 1;
     int REQUEST_LOAD_IMAGE = 1;
     int EMPTY_STRING_RESOURCE = -1;
