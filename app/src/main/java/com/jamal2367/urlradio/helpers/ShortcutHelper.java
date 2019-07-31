@@ -49,8 +49,8 @@ public final class ShortcutHelper implements URLRadioKeys {
                     .setIntent(createShortcutIntent(context, station))
                     .build();
             ShortcutManagerCompat.requestPinShortcut(context, shortcut, null);
-            Toast.makeText(context, R.string.toastmessage_shortcut_created, Toast.LENGTH_LONG).show();
         } else {
+            // Shortcut is not supported by your launcher
             Toast.makeText(context, R.string.toastmessage_shortcut_not_created, Toast.LENGTH_LONG).show();
         }
 
