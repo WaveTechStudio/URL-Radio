@@ -24,6 +24,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Build;
@@ -287,9 +288,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         // manually refresh list of stations (force reload) - useful when editing playlist files manually outside of URLRadio
         ArrayList<Station> newStationList = StationListHelper.loadStationListFromStorage(mActivity);
         mCollectionViewModel.getStationList().setValue(newStationList);
-
-        // notify user
-        Toast.makeText(mActivity, mActivity.getString(R.string.toastmessage_list_refreshed), Toast.LENGTH_LONG).show();
     }
 
 
@@ -489,7 +487,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         mPlayerStationImage.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                longPressFeedback(R.string.toastmessage_long_press_change_icon);
                 // get system picker for images
                 ((MainActivity)mActivity).pickImage(mCurrentStation);
                 return true;
@@ -499,7 +496,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         mPlayerStationName.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                longPressFeedback(R.string.toastmessage_long_press_change_name);
                 // construct and run rename dialog
                 DialogRename.show(mActivity, mCurrentStation);
                 return true;
@@ -533,19 +529,11 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         if (station.getPlaybackState() != PLAYBACK_STATE_STOPPED) {
             // stop player service using intent
             stopPlayback();
-            // if long press -> inform user
-            if (isLongPress) {
-                longPressFeedback(R.string.toastmessage_long_press_playback_stopped);
-            }
         } else {
             // start player service using intent
             startPlayback(station);
             mPlayerBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
             mPlayerSheet.setContentDescription(null); // When the sheet is minimized we wish to use automatically generated contentDescription since there are no focusable controls inside
-            // if long press -> inform user
-            if (isLongPress) {
-                longPressFeedback(R.string.toastmessage_long_press_playback_started);
-            }
         }
     }
 
@@ -722,7 +710,7 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
     /* Handles tap timer icon in actionbar */
     private void handleSleepTimerTap() {
         // set duration
-        long duration = FIFTEEN_MINUTES;
+        long duration = FIVE_MINUTES;
 
         // CASE: No station is playing, no timer is running
         if (!PlayerService.isPlaybackRunning() && !mSleepTimerRunning) {
@@ -732,7 +720,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         // CASE: A station is playing, no sleep timer is running
         else if (PlayerService.isPlaybackRunning() && !mSleepTimerRunning) {
             startSleepTimer(duration);
-            Toast.makeText(mActivity, mActivity.getString(R.string.toastmessage_timer_activated), Toast.LENGTH_SHORT).show();
         }
         // CASE: A station is playing, Sleep timer is running
         else if (PlayerService.isPlaybackRunning() && mSleepTimerRunning) {
