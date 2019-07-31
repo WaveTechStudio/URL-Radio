@@ -169,15 +169,15 @@ public final class CollectionAdapter extends RecyclerView.Adapter<RecyclerView.V
             stationViewHolder.getListItemLayout().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // notify and update player sheet
-                    handleTap(holder.getAdapterPosition(), false);
+                    // notify and update player sheet - and start playback
+                    handleTap(holder.getAdapterPosition(), true);
                 }
             });
             stationViewHolder.getListItemLayout().setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
-                    // notify and update player sheet - and start playback
-                    handleTap(holder.getAdapterPosition(),  true);
+                    // notify and update player sheet
+                    handleTap(holder.getAdapterPosition(),  false);
                     return true;
                 }
             });
@@ -188,7 +188,7 @@ public final class CollectionAdapter extends RecyclerView.Adapter<RecyclerView.V
     /* Handles tap on station */
     private void handleTap(int adapterPosition, boolean isLongPress) {
 
-        // notify and update player sheet - and start playback if long press
+        // notify and update player sheet
         mCollectionAdapterListener.itemSelected(mStationList.get(adapterPosition), isLongPress);
         // visually deselect previous station
         notifyItemChanged(mStationIdSelected,HOLDER_UPDATE_SELECTION_STATE);
