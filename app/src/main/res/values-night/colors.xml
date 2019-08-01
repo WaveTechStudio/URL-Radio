@@ -14,7 +14,7 @@
     <color name="player_button_background">@color/urlradio_red_dark</color>
 
     <color name="list_item_background">@color/urlradio_dark</color>
-    <color name="list_item_background_selected">@color/urlradio_dark_middle</color>
+    <color name="list_item_background_selected">@color/urlradio_middle_dark</color>
     <color name="list_item_divider">@color/urlradio_darker</color>
 
     <color name="station_image_background">@color/urlradio_grey_light</color>
