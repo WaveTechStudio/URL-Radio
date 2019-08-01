@@ -19,9 +19,17 @@
         <!-- Set navigation bar color -->
         <item name="android:navigationBarColor">@color/navigation_bar_background</item>
 
+        <!-- Set snack bar style -->
+        <item name="snackbarStyle">@style/LightSnackBarStyle</item>
+
         <!-- Default window background used for resizing on v24) -->
         <item name="android:windowBackgroundFallback">@color/urlradio_grey_darker</item>
 
+    </style>
+
+    <!-- Snack bar color -->
+    <style name="LightSnackBarStyle" parent="Widget.Design.Snackbar">
+        <item name="android:background">@color/snack_bar_background</item>
     </style>
 
 </resources>
