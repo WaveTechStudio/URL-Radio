@@ -3,6 +3,7 @@
 
     <color name="app_window_background">@color/urlradio_white</color>
     <color name="status_bar_background">@color/urlradio_white</color>
+    <color name="snack_bar_background">@color/urlradio_snackbar_light</color>
     <color name="navigation_bar_background">@color/urlradio_grey_darker</color>
     <color name="app_onboarding_icons">@color/urlradio_grey_dark</color>
 
@@ -37,6 +38,9 @@
     <color name="urlradio_dark">#FF232323</color>
     <color name="urlradio_middle_dark">#FF202020</color>
     <color name="urlradio_darker">#FF191919</color>
+
+    <color name="urlradio_snackbar_light">#FF18191B</color>
+    <color name="urlradio_snackbar_dark">#FF1A1A1A</color>
 	
     <color name="urlradio_white">#FFFFFFFF</color>
 	
