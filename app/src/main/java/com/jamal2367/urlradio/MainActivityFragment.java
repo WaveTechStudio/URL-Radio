@@ -759,7 +759,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
         }
         mSleepTimerRunning = false;
         LogHelper.v(LOG_TAG, "Stopping timer service and notification.");
-        Toast.makeText(mActivity, mActivity.getString(R.string.toastmessage_timer_cancelled), Toast.LENGTH_SHORT).show();
     }
 
 
@@ -784,8 +783,6 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
                 intent.setAction(ACTION_TIMER_STOP);
                 mActivity.startService(intent);
                 mSleepTimerRunning = false;
-                // notify user
-                Toast.makeText(mActivity, mActivity.getString(R.string.toastmessage_timer_cancelled), Toast.LENGTH_SHORT).show();
                 LogHelper.v(LOG_TAG, "Sleep timer cancelled.");
             }
         });
