@@ -80,7 +80,6 @@
     <string name="toastmessage_copied_to_clipboard_metadata">Metadata copied to clipboard.</string>
     <string name="toastmessage_station_copied">Station copied to clipboard.</string>
     <string name="toastmessage_stream_may_not_work">Unsupported audio format detected. Playback of stream may not work properly!</string>
-    <string name="toastmessage_timer_cancelled">Sleep timer cancelled.</string>
     <string name="toastmessage_timer_duration_increased">Duration increased.</string>
     <string name="toastmessage_timer_start_unable">Please start playback first!</string>
     <string name="toastalert_unable_to_connect">Unable to connect. Device does not have an internet connection or stream may be outdated!</string>
