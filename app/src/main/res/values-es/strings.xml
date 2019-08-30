@@ -73,22 +73,14 @@
     <!-- messages -->
     <string name="toastmessage_add_download_started">Descarga comenzada.</string>
     <string name="toastmessage_add_open_file_started">Abriendo archivo.</string>
-    <string name="toastmessage_long_press_playback_stopped">Reproducción detenida (detectada pulsación larga)</string>
-    <string name="toastmessage_long_press_playback_started">Reproducción empezada (detectada pulsación larga)</string>
-    <string name="toastmessage_long_press_change_icon">Cambiar el icono de la emisora (pulsación larga detectada)</string>
-    <string name="toastmessage_long_press_change_name">Renombrar emisora (se detecta una pulsación larga)</string>
     <string name="toastmessage_theme_night">Cambio al modo Noche (se detecta una pulsación prolongada)</string>
     <string name="toastmessage_theme_day">Cambio al modo Día (se detecta una pulsación prolongada)</string>
     <string name="toastmessage_theme_follow_system">Cambiar al modo de ajuste del sistema (se detecta una pulsación prolongada)</string>
-    <string name="toastmessage_shortcut_created">Acceso directo creado.</string>
     <string name="toastmessage_shortcut_not_created">Atajo no creado. Este dispositivo no permite la creación de accesos directos.</string>
-    <string name="toastmessage_list_refreshed">Recargando lista de emisoras.</string>
     <string name="toastmessage_copied_to_clipboard_url">Enlace de streaming copiada al portapapeles.</string>
     <string name="toastmessage_copied_to_clipboard_metadata">Metadatos copiados al portapapeles.</string>
     <string name="toastmessage_station_copied">Emisora copiada al portapapeles.</string>
     <string name="toastmessage_stream_may_not_work">Detectado formato de audio no soportado. La reproducción de la retransmisión quizás no funcione correctamente.</string>
-    <string name="toastmessage_timer_activated">Temporizador de apagado activado.</string>
-    <string name="toastmessage_timer_cancelled">Temporizador de apagado cancelado.</string>
     <string name="toastmessage_timer_duration_increased">Duración incrementada.</string>
     <string name="toastmessage_timer_start_unable">Por favor inicia primero la reproducción.</string>
     <string name="toastalert_unable_to_connect">No se puede conectar. El dispositivo no tiene conexión a Internet o el stream puede estar desactualizado.</string>
