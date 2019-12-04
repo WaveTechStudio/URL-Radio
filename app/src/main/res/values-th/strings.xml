@@ -16,16 +16,13 @@
     <string name="dialog_add_station_message">เพิ่มสถานีใหม่</string>
     <string name="toastmessage_shortcut_not_created">ไม่สามารถสร้างทางลัด อุปกรณ์นี้ไม่อนุญาตให้สร้างทางลัด</string>
     <string name="dialog_add_station_choose_stream_heading">พบสตรีมหลายรายการ</string>
-    <string name="toastmessage_long_press_playback_started">เริ่มเล่น (ตรวจพบการกดค้าง)</string>
     <string name="snackbar_message_timer_set">ตั้งเวลาปิดการทำงานไว้ที่</string>
     <string name="toastmessage_theme_day">สลับเป็น Day mode (ตรวจพบการกดค้าง)</string>
     <string name="dialog_rename_station_input_hint">ป้อนชื่อสถานีใหม่</string>
     <string name="descr_playback_indicator">สถานีเล่น</string>
     <string name="dialog_add_station_button">เพิ่ม</string>
     <string name="notification_stop">หยุด</string>
-    <string name="toastmessage_list_refreshed">โหลดรายการสถานีใหม่</string>
     <string name="dialog_button_rename">ตั้งชื่อใหม่</string>
-    <string name="toastmessage_timer_activated">เปิดใช้งานตัวตั้งเวลาปิดการทำงาน</string>
     <string name="dialog_error_message_fetch_general_playlist_type">ประเภทสื่อของไฟล์:</string>
     <string name="player_sheet_h2_stream_url">ลิงค์สตรีมมิ่ง</string>
     <string name="dialog_error_title_default">ความผิดพลาด</string>
@@ -43,17 +40,13 @@
     <string name="dialog_error_message_fetch_download_station_url">ลิงก์สตรีมมิ่งของสถานี:</string>
     <string name="menu_delete">ลบ</string>
     <string name="toastmessage_stream_may_not_work">ตรวจพบรูปแบบเสียงที่ไม่รองรับ การเล่นสตรีมอาจทำงานไม่สมบูรณ์</string>
-    <string name="toastmessage_timer_cancelled">ยกเลิกตัวตั้งเวลาปิดการทำงาน</string>
     <string name="menu_icon">เปลี่ยนไอคอน</string>
     <string name="dialog_error_title_fetch_read">ปัญหาการอ่าน</string>
-    <string name="toastmessage_long_press_playback_stopped">หยุดเล่น (ตรวจพบการกดค้าง)</string>
     <string name="player_sheet_h2_station_bitrate">บิตเรต</string>
     <string name="dialog_error_message_fetch_read_file_location">ตำแหน่งของไฟล์:</string>
     <string name="toastmessage_theme_night">สลับเป็น Night mode (ตรวจพบการกดค้าง)</string>
     <string name="player_sheet_h2_current_session">เซสชันปัจจุบัน</string>
-    <string name="toastmessage_long_press_change_icon">เปลี่ยนไอคอนสถานี (ตรวจพบการกดค้าง)</string>
     <string name="dialog_error_message_fetch_general_stream_type">MIME type ของสตรีม:</string>
-    <string name="toastmessage_long_press_change_name">เปลี่ยนชื่อสถานี (ตรวจพบการกดค้าง)</string>
     <string name="toastalert_permission_denied">ปฏิเสธการอนุญาต:</string>
     <string name="dialog_generic_button_okay">ตกลง</string>
     <string name="onboarding_app_description">แอพวิทยุออนไลน์</string>
@@ -96,6 +89,5 @@
     <string name="toastalert_headphones_unplugged">การเล่นหยุดลงเพราะหูฟังไม่ได้เสียบ</string>
     <string name="shortcut_last_station_disabled_message">ทางลัดสำหรับการเล่นสถานีสุดท้ายถูกปิดใช้งาน</string>
     <string name="descr_station_options_button">ตัวเลือก</string>
-    <string name="toastmessage_shortcut_created">สร้างทางลัดแล้ว</string>
     <string name="menu_shortcut">วางบนหน้าจอหลัก</string>
 </resources>
