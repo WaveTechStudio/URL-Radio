@@ -6,7 +6,7 @@
  * This file is part of
  * URL Radio - Radio Application
  *
- * Copyright (c) 2019 - jamal2367.org
+ * Copyright (c) 2020 - jamal2367.de
  * Licensed under the MIT-License
  * http://opensource.org/licenses/MIT
  */
@@ -31,6 +31,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
+import android.text.Html;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -660,9 +661,11 @@ public final class MainActivityFragment extends Fragment implements URLRadioKeys
             } else {
                 mPlayerStationMetadata.setVisibility(View.VISIBLE);
             }
-            mPlayerStationMetadata.setText(stationMetadata);
+            // mPlayerStationMetadata.setText(stationMetadata);
+            mPlayerStationMetadata.setText(Html.fromHtml(stationMetadata));
             mPlayerStationMetadata.setSelected(true); // triggers the marquee
-            mPlayerSheetMetadata.setText(stationMetadata);
+            // mPlayerSheetMetadata.setText(stationMetadata);
+            mPlayerSheetMetadata.setText(Html.fromHtml(stationMetadata));
             mPlayerSheetMetadata.setSelected(true); // triggers the marquee
         }
     }

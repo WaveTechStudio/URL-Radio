@@ -13,8 +13,8 @@ android {
         applicationId 'com.jamal2367.urlradio'
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 13
-        versionName '2.2.0'
+        versionCode 14
+        versionName '2.3.0'
 
         vectorDrawables.useSupportLibrary = true
         resConfigs "en", "de", "es", "eu", "fr", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sk", "th", "tr"
@@ -45,9 +45,9 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:1.1.3"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     implementation "androidx.media:media:1.1.0"
-    implementation "androidx.lifecycle:lifecycle-runtime:2.1.0"
-    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
-    implementation "com.google.android.material:material:1.1.0-beta02"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "com.google.android.material:material:1.1.0-rc02"
     implementation "com.google.android.exoplayer:exoplayer-core:2.11.1"
     implementation "com.google.android.exoplayer:exoplayer-hls:2.11.1"
 

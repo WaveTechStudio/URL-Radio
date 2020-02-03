@@ -6,7 +6,7 @@
  * This file is part of
  * URL Radio - Radio Application
  *
- * Copyright (c) 2019 - jamal2367.org
+ * Copyright (c) 2020 - jamal2367.de
  * Licensed under the MIT-License
  * http://opensource.org/licenses/MIT
  */
