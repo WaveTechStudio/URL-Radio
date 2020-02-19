@@ -13,8 +13,8 @@ android {
         applicationId 'com.jamal2367.urlradio'
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 15
-        versionName '2.4.0'
+        versionCode 16
+        versionName '2.5.0'
 
         vectorDrawables.useSupportLibrary = true
         resConfigs "cs", "en", "de", "es", "eu", "fr", "id", "in", "it", "ja", "nb-rNO", "nl", "pl", "pt", "pt-rBR", "ru", "sk", "th", "tr"
