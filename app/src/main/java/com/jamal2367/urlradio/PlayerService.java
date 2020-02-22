@@ -78,6 +78,9 @@ import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultAllocator;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
+import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
+import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.util.Util;
 
 import com.jamal2367.urlradio.core.Station;
@@ -91,8 +94,8 @@ import com.jamal2367.urlradio.helpers.StationListProvider;
 import com.jamal2367.urlradio.helpers.URLRadioKeys;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -771,7 +774,8 @@ public final class PlayerService extends MediaBrowserServiceCompat implements UR
     private void preparePlayer(int connectionType) {
         // create DataSource.Factory - produces DataSource instances through which media data is loaded
         DataSource.Factory dataSourceFactory;
-        dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this, mUserAgent));
+        dataSourceFactory = createDataSourceFactory(this, Util.getUserAgent(this, mUserAgent), null);
+        // dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this, mUserAgent));
 
         // create MediaSource
         MediaSource mediaSource;
@@ -979,6 +983,26 @@ public final class PlayerService extends MediaBrowserServiceCompat implements UR
     }
 
 
+    /* Creates a DataSourceFactor that supports http redirects */
+    public static DefaultDataSourceFactory createDataSourceFactory(Context context, String userAgent, TransferListener listener) {
+        // Credit: https://stackoverflow.com/questions/41517440/exoplayer2-how-can-i-make-a-http-301-redirect-work
+        // Default parameters, except allowCrossProtocolRedirects is true
+        DefaultHttpDataSourceFactory httpDataSourceFactory = new DefaultHttpDataSourceFactory(
+                userAgent,
+                listener,
+                DefaultHttpDataSource.DEFAULT_CONNECT_TIMEOUT_MILLIS,
+                DefaultHttpDataSource.DEFAULT_READ_TIMEOUT_MILLIS,
+                true /* allowCrossProtocolRedirects */
+        );
+        DefaultDataSourceFactory dataSourceFactory = new DefaultDataSourceFactory(
+                context,
+                listener,
+                httpDataSourceFactory
+        );
+        return dataSourceFactory;
+    }
+
+
 //    /* Loads app state from preferences */
 //    private void loadAppState(Context context) {
 //        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(context);
@@ -986,6 +1010,45 @@ public final class PlayerService extends MediaBrowserServiceCompat implements UR
 //        mStationIdLast = settings.getInt(PREF_STATION_ID_LAST, -1);
 //        LogHelper.v(LOG_TAG, "Loading state ("+  mStationIdCurrent + " / " + mStationIdLast + ")");
 //    }
+
+
+    /* Creates a http connection from given url */ // todo this method is also in Station.java - move it to a helper
+    private HttpURLConnection createConnection(URL fileLocation, int redirectCount) {
+        HttpURLConnection connection = null;
+
+        try {
+            // try to open connection
+            LogHelper.i(LOG_TAG, "Opening http connection.");
+            connection = (HttpURLConnection)fileLocation.openConnection();
+
+            // check for redirects
+            int status = connection.getResponseCode();
+            if (status != HttpURLConnection.HTTP_OK) {
+                if (status == HttpURLConnection.HTTP_MOVED_TEMP || status == HttpURLConnection.HTTP_MOVED_PERM || status == HttpURLConnection.HTTP_SEE_OTHER) {
+
+                    // handle redirects
+                    LogHelper.i(LOG_TAG, "Following a redirect.");
+                    // get redirect url from "location" header field
+                    String redirectUrl = connection.getHeaderField("Location");
+                    connection.disconnect();
+                    if (redirectCount < 5) {
+                        // create new connection with redirect url
+                        connection = createConnection(new URL(redirectUrl), redirectCount + 1);
+                    } else {
+                        connection = null;
+                        LogHelper.e(LOG_TAG, "Too many redirects.");
+                    }
+
+                }
+            }
+
+        } catch (IOException e) {
+            LogHelper.e(LOG_TAG, "Unable to open http connection.");
+            e.printStackTrace();
+        }
+
+        return connection;
+    }
 
 
     /**
@@ -1137,9 +1200,10 @@ public final class PlayerService extends MediaBrowserServiceCompat implements UR
             String contentType = "";
 
             try {
-                URLConnection connection = new URL(mStation.getStreamUri().toString()).openConnection();
-                connection.connect();
+                HttpURLConnection connection = createConnection(new URL(mStation.getStreamUri().toString()), 0 );
+
                 contentType = connection.getContentType();
+                connection.disconnect();
                 if (contentType == null) {
                     LogHelper.e(LOG_TAG, "Connection Error. Connection is NULL");
                     return CONNECTION_TYPE_ERROR;
@@ -1161,7 +1225,7 @@ public final class PlayerService extends MediaBrowserServiceCompat implements UR
                     LogHelper.e(LOG_TAG, "Connection Error. Connection is " + contentType);
                     return CONNECTION_TYPE_ERROR;
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 LogHelper.e(LOG_TAG, "Connection Error. Details: " + e);
                 return CONNECTION_TYPE_ERROR;
             }
