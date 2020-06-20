@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="app_window_background">@color/urlradio_dark</color>
-    <color name="status_bar_background">@color/urlradio_dark</color>
-    <color name="snack_bar_background">@color/urlradio_snackbar_dark</color>
-    <color name="navigation_bar_background">@color/urlradio_darker</color>
-    <color name="app_onboarding_icons">@color/urlradio_grey_very_light</color>
+    <!-- NIGHT THEME COLORS -->
+    <color name="app_window_background">@color/urlradio_black</color>
+    <color name="status_bar_background">@color/urlradio_black</color>
+    <color name="app_onboarding_icons">@color/urlradio_white</color>
 
-    <color name="player_sheet_background_main">@color/urlradio_darker</color>
-    <color name="player_sheet_background_main_border">@color/urlradio_darker</color>
+    <color name="toolbar_background">@color/urlradio_black</color>
+    <!-- <color name="toolbar_text">@color/urlradio_white</color> -->
+
+    <color name="text_default">@color/urlradio_white</color>
+    <color name="text_lightweight">@color/urlradio_grey_very_light</color>
+
+    <color name="icon_default">@color/urlradio_white</color>
+    <color name="icon_lightweight">@color/urlradio_grey_very_light</color>
+    <color name="icon_very_lightweight">@color/urlradio_grey_lighter</color>
+
+    <color name="player_button_background">@color/urlradio_red</color>
+    <color name="player_background">@color/urlradio_grey_dark</color>
     <color name="player_sheet_text_main">@color/urlradio_white</color>
-    <color name="player_sheet_background_details">@color/urlradio_darker</color>
+    <color name="player_sheet_background">@color/urlradio_grey_darker</color>
+    <color name="player_sheet_background_border">@color/urlradio_grey_darker</color>
+    <!-- <color name="player_sheet_background">@color/urlradio_grey_dark</color> -->
     <color name="player_sheet_text_details">@color/urlradio_white</color>
-    <color name="player_button_background">@color/urlradio_red_dark</color>
+    <color name="player_sheet_icon">@color/urlradio_white</color>
 
-    <color name="list_item_background">@color/urlradio_dark</color>
-    <color name="list_item_background_selected">@color/urlradio_middle_dark</color>
-    <color name="list_item_divider">@color/urlradio_darker</color>
+    <color name="show_notes_divider">@color/urlradio_grey</color>
 
-    <color name="station_image_background">@color/urlradio_grey_light</color>
+    <color name="list_card_background">@color/urlradio_grey_dark</color>
+    <color name="list_card_background_starred">@color/urlradio_red_darker</color>
+    <color name="list_card_cover_background">@color/urlradio_grey_darker</color>
+    <color name="list_card_delete_background">@color/urlradio_red</color>
+    <color name="list_card_mark_starred_background">@color/urlradio_grey_darker</color>
+    <color name="list_card_station_buffering_progress_background">@color/urlradio_grey_light</color>
+
+    <color name="search_result_background">@color/urlradio_grey_dark</color>
+    <color name="search_result_background_selected">@color/urlradio_grey</color>
 
 </resources>
