@@ -38,7 +38,6 @@ import android.support.v4.media.session.PlaybackStateCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
@@ -231,7 +230,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
                     pickImage()
                 } else {
                     // permission denied
-                    Toast.makeText(activity as Context, R.string.toastmessage_error_missing_storage_permission, Toast.LENGTH_LONG).show()
+                    UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastmessage_error_missing_storage_permission)
                 }
             }
             // let activity handle result
@@ -275,7 +274,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
                 }
                 // CASE: invalid address
                 else {
-                    Toast.makeText(activity as Context, R.string.toastmessage_station_not_valid, Toast.LENGTH_LONG).show()
+                    UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastmessage_station_not_valid)
                 }
             }
         }
@@ -336,7 +335,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
                         if (CollectionHelper.hasEnoughTimePassedSinceLastUpdate(activity as Context)) {
                             updateCollection()
                         } else {
-                            Toast.makeText(activity as Context, R.string.toastmessage_collection_update_not_necessary, Toast.LENGTH_LONG).show()
+                            UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastmessage_collection_update_not_necessary)
                         }
                     }
                 }
@@ -395,7 +394,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
             val playbackState: PlaybackStateCompat = MediaControllerCompat.getMediaController(activity as Activity).playbackState
             when (playbackState.isActive) {
                 true -> MediaControllerCompat.getMediaController(activity as Activity).sendCommand(Keys.CMD_START_SLEEP_TIMER, null, null)
-                false -> Toast.makeText(activity as Context, R.string.toastmessage_sleep_timer_unable_to_start, Toast.LENGTH_LONG).show()
+                false -> UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastmessage_sleep_timer_unable_to_start)
             }
         }
 
@@ -471,7 +470,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
     /* Updates collection */
     private fun updateCollection() {
         if (NetworkHelper.isConnectedToNetwork(activity as Context)) {
-            Toast.makeText(activity as Context, R.string.toastmessage_updating_collection, Toast.LENGTH_LONG).show()
+            UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastmessage_updating_collection)
             val updateHelper: UpdateHelper = UpdateHelper(activity as Context, collectionAdapter, collection)
             updateHelper.updateCollection()
         } else {
@@ -492,7 +491,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
             if (imagePickerApps.isNotEmpty()) {
                 startActivityForResult(pickImageIntent, Keys.REQUEST_LOAD_IMAGE, null )
             } else {
-                Toast.makeText(context, R.string.toastalert_no_image_picker, Toast.LENGTH_LONG).show()
+                UiHelper.displaySnackbar(layout.rootView, layout.bottomSheet, R.string.toastalert_no_image_picker)
             }
         }
     }
