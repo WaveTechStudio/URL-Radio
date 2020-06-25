@@ -40,10 +40,7 @@ import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.dialogs.EditStationDialog
 import com.jamal2367.urlradio.dialogs.RenameStationDialog
-import com.jamal2367.urlradio.helpers.CollectionHelper
-import com.jamal2367.urlradio.helpers.LogHelper
-import com.jamal2367.urlradio.helpers.ShortcutHelper
-import com.jamal2367.urlradio.helpers.UpdateHelper
+import com.jamal2367.urlradio.helpers.*
 
 
 /*
@@ -478,11 +475,12 @@ class CollectionAdapter(private val context: Context, private val collectionAdap
             if (oldStation.starred != newStation.starred) return false
             if (oldStation.name != newStation.name) return false
             if (oldStation.stream != newStation.stream) return false
-            if (oldStation.image != newStation.image) return false
-            if (oldStation.smallImage != newStation.smallImage) return false
             if (oldStation.remoteImageLocation != newStation.remoteImageLocation) return false
             if (oldStation.remoteStationLocation != newStation.remoteStationLocation) return false
             if (!oldStation.streamUris.containsAll(newStation.streamUris)) return false
+            if (oldStation.imageColor != newStation.imageColor) return false
+            if (FileHelper.getFileSize(context, Uri.parse(oldStation.image)) != FileHelper.getFileSize(context, Uri.parse(newStation.image))) return false
+            if (FileHelper.getFileSize(context, Uri.parse(oldStation.smallImage)) != FileHelper.getFileSize(context, Uri.parse(newStation.smallImage))) return false
 
             // none of the above -> contents are the same
             return true
