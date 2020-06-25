@@ -14,6 +14,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 
 import androidx.preference.PreferenceManager
 import com.jamal2367.urlradio.helpers.AppThemeHelper
+import com.jamal2367.urlradio.helpers.FileHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.PreferencesHelper
 import kotlinx.android.synthetic.main.card_station.*
@@ -33,6 +34,9 @@ class MainActivity: AppCompatActivity() {
 
         // set up views
         setContentView(R.layout.activity_main)
+
+        // create .nomedia file - if not yet existing
+        FileHelper.createNomediaFile(getExternalFilesDir(null))
 
         // set up action bar
         setSupportActionBar(findViewById(R.id.main_toolbar))
