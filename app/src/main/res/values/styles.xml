@@ -6,7 +6,7 @@
         <!-- Set AppCompat’s colors -->
         <item name="colorPrimary">@color/urlradio_grey_dark</item>
         <item name="colorPrimaryDark">@color/urlradio_grey_darker</item>
-        <item name="colorAccent">@color/urlradio_red</item>
+        <item name="colorAccent">@color/urlradio_blue</item>
 
         <!-- Show white status bar -->
         <item name="android:windowLightStatusBar">true</item>

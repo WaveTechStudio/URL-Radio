@@ -16,7 +16,7 @@
     <color name="icon_lightweight">@color/urlradio_grey_very_light</color>
     <color name="icon_very_lightweight">@color/urlradio_grey_lighter</color>
 
-    <color name="player_button_background">@color/urlradio_red</color>
+    <color name="player_button_background">@color/urlradio_blue</color>
     <color name="player_background">@color/urlradio_grey_dark</color>
     <color name="player_sheet_text_main">@color/urlradio_white</color>
     <color name="player_sheet_background">@color/urlradio_grey_darker</color>
@@ -28,7 +28,7 @@
     <color name="show_notes_divider">@color/urlradio_grey</color>
 
     <color name="list_card_background">@color/urlradio_grey_dark</color>
-    <color name="list_card_background_starred">@color/urlradio_red_darker</color>
+    <color name="list_card_background_starred">@color/urlradio_blue</color>
     <color name="list_card_cover_background">@color/urlradio_grey_darker</color>
     <color name="list_card_delete_background">@color/urlradio_red</color>
     <color name="list_card_mark_starred_background">@color/urlradio_grey_darker</color>

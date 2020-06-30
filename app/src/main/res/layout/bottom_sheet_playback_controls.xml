@@ -94,7 +94,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
         android:indeterminateTintMode="src_in"
-        android:indeterminateTint="@color/urlradio_red_light"
+        android:indeterminateTint="@color/urlradio_blue_light"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/player_background" />
