@@ -21,6 +21,6 @@
 -renamesourcefileattribute SourceFile
 
 # Preserve the core classes - because they need to be de-/serialized with GSON
--keep public class com.jamal2367.urlradio.core.**  { *; }
+-keep public class com.jamal2367.urlradio.core.*  { *; }
 -keep public class com.jamal2367.urlradio.PlayerService  { *; }
 -keep public class com.jamal2367.urlradio.search.RadioBrowserResult  { *; }
