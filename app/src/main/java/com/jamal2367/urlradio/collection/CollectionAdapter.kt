@@ -220,7 +220,19 @@ class CollectionAdapter(private val context: Context, private val collectionAdap
             PlaybackStateCompat.STATE_PLAYING -> stationViewHolder.playButtonView.setImageResource(R.drawable.ic_stop_circle_outline_36dp)
             else -> stationViewHolder.playButtonView.setImageResource(R.drawable.ic_play_circle_outline_36dp)
         }
+        stationViewHolder.stationCardView.setOnClickListener {
+            collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
+        }
         stationViewHolder.playButtonView.setOnClickListener {
+            collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
+        }
+        stationViewHolder.stationNameView.setOnClickListener {
+            collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
+        }
+        stationViewHolder.stationStarredView.setOnClickListener {
+            collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
+        }
+        stationViewHolder.stationImageView.setOnClickListener {
             collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
         }
         stationViewHolder.playButtonView.setOnLongClickListener {

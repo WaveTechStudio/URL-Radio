@@ -208,9 +208,9 @@
 
     <!-- Sample Text -->
     <string name="sample_text_sleep_timer_remaining_time" translatable="false">00:00</string>
-    <string name="sample_text_station_metadata" translatable="false">David Bowie - The Man Who Sold The World</string>
-    <string name="sample_text_station_name" translatable="false">Byte FM</string>
-    <string name="sample_text_steam_url" translatable="false">http://bytefm.cast.addradio.de/bytefm/main/mid/stream</string>
+    <string name="sample_text_station_metadata" translatable="false">Future - Mask Off</string>
+    <string name="sample_text_station_name" translatable="false">bigFM Deutschland</string>
+    <string name="sample_text_steam_url" translatable="false">https://streams.bigfm.de/bigfm-deutschland-128-mp3</string>
 
     <!-- Allowed Caller Template -->
     <string name="allowed_caller_log" translatable="false">
