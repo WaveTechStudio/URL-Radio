@@ -4,8 +4,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,7 +15,6 @@ import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.FileHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.PreferencesHelper
-import kotlinx.android.synthetic.main.card_station.*
 
 class MainActivity: AppCompatActivity() {
 
