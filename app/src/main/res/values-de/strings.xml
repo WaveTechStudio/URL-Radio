@@ -137,15 +137,20 @@
     <string name="player_sheet_h2_stream_url">Streaming-Adresse</string>
 
     <!-- Settings -->
+    <string name="pref_about_title">Über</string>
+    <string name="pref_app_version_summary">Version</string>
+    <string name="pref_app_version_title">App Version</string>
     <string name="pref_delete_all_title">Downloads löschen</string>
     <string name="pref_general_title">Allgemein</string>
     <string name="pref_maintenance_title">Wartung</string>
+    <string name="pref_report_issue_summary">Fehler auf GitHub melden und Verbesserungen vorschlagen</string>
+    <string name="pref_report_issue_title">Fehler melden</string>
     <string name="pref_theme_selection_mode_dark">Dunkler Modus</string>
     <string name="pref_theme_selection_mode_device_default">Identisch zum Gerät</string>
     <string name="pref_theme_selection_mode_light">Heller Modus</string>
     <string name="pref_theme_selection_summary">Aktuelles Design:</string>
     <string name="pref_theme_selection_title">App-Design</string>
-    <string name="pref_update_station_images_summary">Lade die neueste Version aller Senderbilder in deiner Sammlung herunter.</string>
+    <string name="pref_update_station_images_summary">Lade die neueste Version aller Senderbilder in deiner Sammlung herunter</string>
     <string name="pref_update_station_images_title">Senderbilder aktualisieren</string>
 
     <!-- App Shortcuts -->
@@ -174,8 +179,7 @@
     <string name="toastmessage_add_download_started">Download gestartet</string>
     <string name="toastmessage_add_open_file_started">Öffne Datei</string>
     <string name="toastmessage_collection_update_not_necessary">Die Sammlung der Sender ist aktuell</string>
-    <string name="toastmessage_copied_to_clipboard_metadata">Metadaten in die Zwischenablage kopiert</string>
-    <string name="toastmessage_copied_to_clipboard_url">Streaming-Adresse in die Zwischenablage kopiert</string>
+    <string name="toastmessage_copied_to_clipboard">In die Zwischenablage kopiert</string>
     <string name="toastmessage_error_download_error">Downloadfehler</string>
     <string name="toastmessage_error_missing_storage_permission">Erteile die Berechtigung \"Speicher lesen\", um diese Datei zu öffnen</string>
     <string name="toastmessage_error_no_station_found">Die Wiedergabe konnte nicht gestartet werden. Bitte füge zuerst einen Radiosender hinzu</string>
