@@ -73,10 +73,10 @@ object ImportHelper {
                 }
                 // check for success (= at least one station was found)
                 if (success) {
-                    // delete files from URLRadio v3
+                    // delete files from URLRadio v2
                     oldCollectionFolder.deleteRecursively()
-                    // save collection
-                    val newCollection: Collection = Collection(stations = oldStations)
+                    // sort and save collection
+                    val newCollection: Collection = CollectionHelper.sortCollection(Collection(stations = oldStations))
                     CollectionHelper.saveCollection(context, newCollection)
                 }
             }
