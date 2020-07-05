@@ -45,8 +45,8 @@
     <color name="urlradio_grey_dark">#FF313131</color>
     <color name="urlradio_grey_darker">#FF2D2D2D</color>
 
-    <color name="urlradio_blue">#FF1565C0</color>
-    <color name="urlradio_blue_light">#FF1976D2</color>
+    <color name="urlradio_blue">#FF2196F3</color>
+    <color name="urlradio_blue_light">#FF42A5F5</color>
 
     <color name="urlradio_green">#FF00C853</color>
 
