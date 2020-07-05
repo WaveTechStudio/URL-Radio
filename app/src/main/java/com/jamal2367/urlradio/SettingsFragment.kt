@@ -63,7 +63,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         // set up "App Theme" preference
         val preferenceThemeSelection: ListPreference = ListPreference(activity as Context)
         preferenceThemeSelection.title = getString(R.string.pref_theme_selection_title)
-        preferenceThemeSelection.setIcon(R.drawable.ic_smartphone_24dp)
+        preferenceThemeSelection.setIcon(R.drawable.ic_brush_24dp)
         preferenceThemeSelection.key = Keys.PREF_THEME_SELECTION
         preferenceThemeSelection.summary = "${getString(R.string.pref_theme_selection_summary)} ${AppThemeHelper.getCurrentTheme(activity as Context)}"
         preferenceThemeSelection.entries = arrayOf(getString(R.string.pref_theme_selection_mode_device_default), getString(R.string.pref_theme_selection_mode_light), getString(R.string.pref_theme_selection_mode_dark))
