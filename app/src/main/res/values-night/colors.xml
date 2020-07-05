@@ -31,7 +31,7 @@
     <color name="list_card_background_starred">@color/urlradio_blue</color>
     <color name="list_card_cover_background">@color/urlradio_grey_darker</color>
     <color name="list_card_delete_background">@color/urlradio_red</color>
-    <color name="list_card_mark_starred_background">@color/urlradio_grey_darker</color>
+    <color name="list_card_mark_starred_background">@color/urlradio_green</color>
     <color name="list_card_station_buffering_progress_background">@color/urlradio_grey_light</color>
 
     <color name="search_result_background">@color/urlradio_grey_dark</color>
