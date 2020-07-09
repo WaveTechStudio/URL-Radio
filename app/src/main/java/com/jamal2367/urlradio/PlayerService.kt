@@ -242,6 +242,8 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         }
         // update notification
         mediaController.playbackState?.let { updateNotification(it) }
+        // update metadata
+        mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
         // save history to
         PreferencesHelper.saveMetadataHistory(this, metadataHistory)
     }
@@ -696,7 +698,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getStation(collection, mediaId ?: String())
-            mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
             startPlayback()
         }
 
@@ -768,7 +770,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getPreviousStation(collection, station.uuid)
-            mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
             startPlayback()
         }
 
@@ -780,7 +782,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getNextStation(collection, station.uuid)
-            mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
             startPlayback()
         }
 
