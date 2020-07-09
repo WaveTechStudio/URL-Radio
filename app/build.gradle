@@ -5,13 +5,14 @@ apply plugin: 'kotlin-android-extensions'
 android {
 
     compileSdkVersion 30
+    buildToolsVersion '30.0.1'
 
     defaultConfig {
         applicationId 'com.jamal2367.urlradio'
         minSdkVersion 25
         targetSdkVersion 30
-        versionCode 38
-        versionName '3.8.0'
+        versionCode 39
+        versionName '3.9.0'
         resConfigs "en", "de"
         setProperty("archivesBaseName", "URL_Radio_v" + versionName)
     }
