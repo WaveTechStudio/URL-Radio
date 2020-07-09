@@ -52,7 +52,6 @@ import com.jamal2367.urlradio.collection.CollectionAdapter
 import com.jamal2367.urlradio.collection.CollectionViewModel
 import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
-import com.jamal2367.urlradio.dialogs.ErrorDialog
 import com.jamal2367.urlradio.dialogs.FindStationDialog
 import com.jamal2367.urlradio.dialogs.YesNoDialog
 import com.jamal2367.urlradio.extensions.isActive
@@ -329,19 +328,6 @@ class PlayerFragment: Fragment(), CoroutineScope,
     override fun onYesNoDialog(type: Int, dialogResult: Boolean, payload: Int, payloadString: String) {
         super.onYesNoDialog(type, dialogResult, payload, payloadString)
         when (type) {
-            Keys.DIALOG_UPDATE_COLLECTION -> {
-                when (dialogResult) {
-                    // user tapped update collection
-                    true -> {
-                        if (CollectionHelper.hasEnoughTimePassedSinceLastUpdate(activity as Context)) {
-                            updateCollection()
-                        } else {
-                            Toast.makeText(activity as Context, R.string.toastmessage_collection_update_not_necessary, Toast.LENGTH_LONG).show()
-                        }
-                    }
-                }
-            }
-            // handle result of remove dialog
             Keys.DIALOG_REMOVE_STATION -> {
                 when (dialogResult) {
                     // user tapped remove station
@@ -381,14 +367,6 @@ class PlayerFragment: Fragment(), CoroutineScope,
         }
         val swipeToMarkStarredItemTouchHelper = ItemTouchHelper(swipeToMarkStarredHandler)
         swipeToMarkStarredItemTouchHelper.attachToRecyclerView(layout.recyclerView)
-
-
-        // enable for swipe to refresh
-        layout.swipeRefreshLayout.setOnRefreshListener {
-            // ask user to confirm update
-            YesNoDialog(this@PlayerFragment as YesNoDialog.YesNoDialogListener).show(context = activity as Context, type = Keys.DIALOG_UPDATE_COLLECTION, message = R.string.dialog_yes_no_message_update_collection, yesButton = R.string.dialog_yes_no_positive_button_update_collection)
-            layout.swipeRefreshLayout.isRefreshing = false
-        }
 
         // set up sleep timer start button
         layout.sheetSleepTimerStartButtonView.setOnClickListener {
@@ -464,18 +442,6 @@ class PlayerFragment: Fragment(), CoroutineScope,
         when (startPlayback) {
             true -> MediaControllerCompat.getMediaController(activity as Activity).transportControls.playFromMediaId(station.uuid, null)
             false -> MediaControllerCompat.getMediaController(activity as Activity).transportControls.pause()
-        }
-    }
-
-
-    /* Updates collection */
-    private fun updateCollection() {
-        if (NetworkHelper.isConnectedToNetwork(activity as Context)) {
-            Toast.makeText(activity as Context, R.string.toastmessage_updating_collection, Toast.LENGTH_LONG).show()
-            val updateHelper: UpdateHelper = UpdateHelper(activity as Context, collectionAdapter, collection)
-            updateHelper.updateCollection()
-        } else {
-            ErrorDialog().show(activity as Context, R.string.dialog_error_title_no_network, R.string.dialog_error_message_no_network)
         }
     }
 
@@ -574,7 +540,24 @@ class PlayerFragment: Fragment(), CoroutineScope,
             layout.updatePlayerViews(activity as Context, station, playerState.playbackState)
             // handle start intent
             handleStartIntent()
+
+            handleNavigationArguments()
         })
+    }
+
+
+    private fun handleNavigationArguments() {
+        val updateCollection: Boolean = arguments?.getBoolean(Keys.ARG_UPDATE_COLLECTION, false) ?: false
+        val updateStationImages: Boolean = arguments?.getBoolean(Keys.ARG_UPDATE_IMAGES, false) ?: false
+        if (updateCollection) {
+            arguments?.putBoolean(Keys.ARG_UPDATE_COLLECTION, false)
+            val updateHelper: UpdateHelper = UpdateHelper(activity as Context, collectionAdapter, collection)
+            updateHelper.updateCollection()
+        }
+        if (updateStationImages) {
+            arguments?.putBoolean(Keys.ARG_UPDATE_IMAGES, false)
+            DownloadHelper.updateStationImages(activity as Context)
+        }
     }
 
 
