@@ -154,11 +154,13 @@
     <string name="pref_theme_selection_mode_light">Light mode</string>
     <string name="pref_theme_selection_summary">Current theme:</string>
     <string name="pref_theme_selection_title">App Theme</string>
-    <string name="pref_update_station_images_summary">Download the latest version of all station images in your collection.</string>
+    <string name="pref_update_collection_summary">Look for updated audio streams and new station images</string>
+    <string name="pref_update_collection_title">Update Stations</string>
+    <string name="pref_update_station_images_summary">Download latest version of all station images</string>
     <string name="pref_update_station_images_title">Update Station Images</string>
 
     <!-- App Shortcuts -->
-    <string name="shortcut_last_station_disabled_message">Shortcut for playback of last station disabled.</string>
+    <string name="shortcut_last_station_disabled_message">Shortcut for playback of last station disabled</string>
     <string name="shortcut_last_station_long_label">Play last station</string>
     <string name="shortcut_last_station_short_label">Last station</string>
 
