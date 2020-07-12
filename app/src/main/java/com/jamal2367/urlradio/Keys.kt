@@ -1,12 +1,12 @@
 /*
  * Keys.kt
  * Implements the keys used throughout the app
- * This object hosts all keys used to control URLRadio state
+ * This object hosts all keys used to control URL Radio state
  *
  * This file is part of
  * URL Radio - Radio App for Android
  *
- * Copyright (c) 2020 - jamal2367.de
+ * Copyright (c) 2015-20 - Y20K.org
  * Licensed under the MIT-License
  * http://opensource.org/licenses/MIT
  */

@@ -1,12 +1,12 @@
 /*
  * PlayerFragment.kt
  * Implements the PlayerFragment class
- * PlayerFragment is the fragment that hosts URLRadio's list of stations and a player sheet
+ * PlayerFragment is the fragment that hosts URL Radio's list of stations and a player sheet
  *
  * This file is part of
  * URL Radio - Radio App for Android
  *
- * Copyright (c) 2020 - jamal2367.de
+ * Copyright (c) 2015-20 - Y20K.org
  * Licensed under the MIT-License
  * http://opensource.org/licenses/MIT
  */
