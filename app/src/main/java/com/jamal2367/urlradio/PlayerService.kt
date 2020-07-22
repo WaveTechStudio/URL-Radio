@@ -712,7 +712,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         override fun onPlayFromMediaId(mediaId: String?, extras: Bundle?) {
             // get station, set metadata and start playback
             station = CollectionHelper.getStation(collection, mediaId ?: String())
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
@@ -784,7 +784,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getPreviousStation(collection, station.uuid)
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
@@ -796,7 +796,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getNextStation(collection, station.uuid)
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last()))
+//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
