@@ -171,7 +171,7 @@ object FileHelper {
     fun saveStationImage(context: Context, stationUuid: String, sourceImageUri: String, size: Int, fileName: String): Uri {
         val coverBitmap: Bitmap = ImageHelper.getScaledStationImage(context, sourceImageUri, size)
         val file: File = File(context.getExternalFilesDir(determineDestinationFolderPath(Keys.FILE_TYPE_IMAGE, stationUuid)), fileName)
-        writeImageFile(coverBitmap, file, Bitmap.CompressFormat.JPEG, quality = 75)
+        writeImageFile(coverBitmap, file, Bitmap.CompressFormat.JPEG, quality = 100)
         return file.toUri()
     }
 
@@ -429,7 +429,7 @@ object FileHelper {
 
 
     /* Writes given bitmap as image file to storage */
-    private fun writeImageFile(bitmap: Bitmap, file: File, format: Bitmap.CompressFormat = Bitmap.CompressFormat.JPEG, quality: Int = 75) {
+    private fun writeImageFile(bitmap: Bitmap, file: File, format: Bitmap.CompressFormat = Bitmap.CompressFormat.JPEG, quality: Int = 100) {
         if (file.exists()) file.delete ()
         try {
             val out = FileOutputStream(file)
