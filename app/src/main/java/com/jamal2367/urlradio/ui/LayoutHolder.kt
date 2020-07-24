@@ -17,7 +17,6 @@ package com.jamal2367.urlradio.ui
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.net.Uri
 import android.support.v4.media.session.PlaybackStateCompat
 import android.view.View
 import android.view.animation.Animation
@@ -35,10 +34,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.R
 import com.jamal2367.urlradio.core.Station
-import com.jamal2367.urlradio.helpers.DateTimeHelper
-import com.jamal2367.urlradio.helpers.LogHelper
-import com.jamal2367.urlradio.helpers.PreferencesHelper
-import com.jamal2367.urlradio.helpers.UiHelper
+import com.jamal2367.urlradio.helpers.*
 
 
 /*
@@ -160,7 +156,7 @@ data class LayoutHolder(var rootView: View) {
         if (station.imageColor != -1) {
             stationImageView.setBackgroundColor(station.imageColor)
         }
-        stationImageView.setImageURI(Uri.parse(station.smallImage))
+        stationImageView.setImageBitmap(ImageHelper.getStationImage(context, station.smallImage))
         stationImageView.contentDescription = "${context.getString(R.string.descr_player_station_image)}: ${station.name}"
 
         // update streaming link
