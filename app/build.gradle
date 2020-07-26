@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 46
         versionName '4.6.0'
-        resConfigs "en", "de", "fr", "hr", "in", "it", "pl", "tr"
+        resConfigs "en", "de", "fr", "hr", "in", "it", "pl", "tr", "zh-rCN"
         setProperty("archivesBaseName", "URL_Radio_v" + versionName)
     }
 
