@@ -172,7 +172,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         }
 
         MediaButtonReceiver.handleIntent(mediaSession, intent)
-        return Service.START_STICKY
+        return Service.START_NOT_STICKY
     }
 
 
@@ -533,7 +533,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         }
     }
 
-    
+
     /* Sets playback speed */
     private fun setPlaybackSpeed(speed: Float = 1f) {
         // update playback parameters - speed up playback
