@@ -196,7 +196,6 @@
     <string name="toastmessage_shortcut_not_created">Pintasan gagal dibuat. Perangkat ini tidak mengizinkan pintasan di layar Beranda.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Silakan putar terlebih dahulu.</string>
     <string name="toastmessage_station_copied">Stasiun disalin ke papan klip.</string>
-    <string name="toastmessage_station_duplicate">Duplikat stasiun.</string>
     <string name="toastmessage_station_not_valid">Stasiun tidak valid.</string>
     <string name="toastmessage_stream_may_not_work">Mendeteksi format audio yang tidak didukung. Pemutaran stream mungkin tidak akan berfungsi dengan baik.</string>
     <string name="toastmessage_theme_day">Beralih ke \'Mode Siang\' (mendeteksi tekan lama)</string>

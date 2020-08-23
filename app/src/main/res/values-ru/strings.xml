@@ -196,7 +196,6 @@
     <string name="toastmessage_shortcut_not_created">Ярлык не создан. Устройство не позволяет создавать ярлыки.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Пожалуйста, запустите сперва воспроизведение.</string>
     <string name="toastmessage_station_copied">Станция скопирована в буфер обмена.</string>
-    <string name="toastmessage_station_duplicate">Дубликат станции.</string>
     <string name="toastmessage_station_not_valid">Станция не действительна.</string>
     <string name="toastmessage_stream_may_not_work">Обнаружен неподдерживаемый аудиоформат. Воспроизведение потока может не работать должным образом.</string>
     <string name="toastmessage_theme_day">Переключение в \"дневной режим\" (обнаружено долгое нажатие)</string>

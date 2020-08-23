@@ -196,7 +196,6 @@
     <string name="toastmessage_shortcut_not_created">未创建快捷方式。此设备不允许创建快捷方式。</string>
     <string name="toastmessage_sleep_timer_unable_to_start">请先开始回放。</string>
     <string name="toastmessage_station_copied">已复制电台到剪贴板。</string>
-    <string name="toastmessage_station_duplicate">重复电台。</string>
     <string name="toastmessage_station_not_valid">电台无效。</string>
     <string name="toastmessage_stream_may_not_work">检测到不支持的音频格式。流媒体可能无法正常回放。</string>
     <string name="toastmessage_theme_day">正在切换到 \'日间模式\' （检测到长按）</string>

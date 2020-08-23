@@ -200,7 +200,6 @@
     <string name="toastmessage_shortcut_not_created">Shortcut not created. This device does not allow the creation of shortcuts.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Please start playback first.</string>
     <string name="toastmessage_station_copied">Station copied to clipboard.</string>
-    <string name="toastmessage_station_duplicate">Duplicate station.</string>
     <string name="toastmessage_station_not_valid">Station is not valid.</string>
     <string name="toastmessage_stream_may_not_work">Unsupported audio format detected. Playback of stream may not work properly.</string>
     <string name="toastmessage_theme_day">Switching to \'Day mode\' (long press detected)</string>
