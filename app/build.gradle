@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 50
         versionName '5.0.0'
-        resConfigs "en", "de", "fr", "hr", "in", "it", "pl", "pt", "pt-rBR", "ru", "tr", "zh-rCN"
+        resConfigs "en", "de", "fr", "hr", "in", "it", "nb-rNO", "pl", "pt", "pt-rBR", "ru", "tr", "zh-rCN"
         setProperty("archivesBaseName", "URL_Radio_v" + versionName)
     }
 
