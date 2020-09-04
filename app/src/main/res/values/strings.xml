@@ -99,8 +99,6 @@
     <string name="shortcut_last_station_long_label">Play last station</string>
     <string name="shortcut_last_station_short_label">Last station</string>
 
-    <!-- Snackbar -->
-
     <!-- Station List -->
     <string name="station_list_button_add_new_station">Add new station</string>
 

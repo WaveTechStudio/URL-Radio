@@ -96,8 +96,6 @@
     <string name="shortcut_last_station_long_label">Putar stasiun terakhir</string>
     <string name="shortcut_last_station_short_label">Stasiun terakhir</string>
 
-    <!-- Snackbar -->
-
     <!-- Station List -->
     <string name="station_list_button_add_new_station">Tambah stasiun baru</string>
 

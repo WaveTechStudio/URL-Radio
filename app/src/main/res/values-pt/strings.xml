@@ -95,8 +95,6 @@
     <string name="shortcut_last_station_disabled_message">Atalho para reproduzir a última estação desativado.</string>
     <string name="shortcut_last_station_long_label">Reproduzir última estação</string>
     <string name="shortcut_last_station_short_label">Última estação</string>
-	
-    <!-- Snackbar -->
 
     <!-- Station List -->
     <string name="station_list_button_add_new_station">Adicionar uma nova estação</string>

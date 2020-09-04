@@ -95,8 +95,6 @@
     <string name="shortcut_last_station_disabled_message">Snarvei for avspilling av siste stasjon avskrudd.</string>
     <string name="shortcut_last_station_long_label">Spill siste stasjon</string>
     <string name="shortcut_last_station_short_label">Siste stasjon</string>
-	
-    <!-- Snackbar -->
 
     <!-- Station List -->
     <string name="station_list_button_add_new_station">Legg til ny stasjon</string>

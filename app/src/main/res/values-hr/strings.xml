@@ -95,8 +95,6 @@
     <string name="shortcut_last_station_disabled_message">Prečac za reprodukciju zadnje stanice deaktiviran.</string>
     <string name="shortcut_last_station_long_label">Sviraj zadnju stanicu</string>
     <string name="shortcut_last_station_short_label">Zadnja stanica</string>
-	
-    <!-- Snackbar -->
 
     <!-- Station List -->
     <string name="station_list_button_add_new_station">Dodaj novu stanicu</string>
