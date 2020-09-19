@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<!-- App Name -->
+    <string name="app_name">URL Radio</string>
+    
+	<!-- Descriptions -->
+    <string name="descr_app_icon">Icono de aplicación que muestra una radio antigua</string>
+    <string name="descr_card_settings_button">Configuración</string>
+    <string name="descr_card_small_edit_button">Editar</string>
+    <string name="descr_card_small_play_button">Iniciar/detener</string>
+    <string name="descr_card_starred_station">Emisora destacada</string>
+    <string name="descr_card_station_image">Imagen de emisora</string>
+    <string name="descr_dialog_edit_place_on_home_screen_icon">Ubicar en ventana de inicio</string>
+    <string name="descr_dialog_edit_station_image">Imagen de emisora</string>
+    <string name="descr_dialog_edit_update_icon">Actualizar</string>
+    <string name="descr_expanded_player_sleep_timer_cancel_button">Cancelar tiempo de apagado</string>
+    <string name="descr_expanded_player_sleep_timer_remaining_time">Tiempo restante para tiempo de apagado</string>
+    <string name="descr_expanded_player_sleep_timer_start_button">Iniciar tiempo de apagado</string>
+    <string name="descr_player_playback_button">Iniciar/pausar</string>
+    <string name="descr_player_station_image">Imagen de emisora</string>
+    <string name="descr_station_name_example">Ejemplo FM</string>
+    
+	<!-- Dialogs -->
+    <string name="dialog_button_rename">Cambiar nombre</string>
+    <string name="dialog_button_save">Guardar cambios</string>
+    <string name="dialog_edit_choose_station_image">Seleccionar</string>
+    <string name="dialog_edit_place_on_home_screen">Ubicar en ventana de inicio</string>
+    <string name="dialog_edit_title">Editar Emisora</string>
+    <string name="dialog_edit_update_station">Actualizar emisora</string>
+    <string name="dialog_error_message_default">Un error ha ocurrido</string>
+    <string name="dialog_error_message_no_network">Conectar a Internet.</string>
+    <string name="dialog_error_title_no_network">Sin conexión</string>
+    <string name="dialog_find_station_button_add">Agregar</string>
+    <string name="dialog_find_station_hint">Nombre o dirección de transmisión</string>
+    <string name="dialog_find_station_no_results">No hay resultados.</string>
+    <string name="dialog_find_station_title">Buscar Emisora</string>
+    <string name="dialog_generic_button_cancel">Cancelar</string>
+    <string name="dialog_generic_button_okay">Aceptar</string>
+    <string name="dialog_generic_details_button">Mostrar detalles</string>
+    <string name="dialog_opml_import_details_default">Detalles no disponibles</string>
+    <string name="dialog_rename_station_input_hint">Introducir un nuevo nombre</string>
+    <string name="dialog_yes_no_message_remove_station">¿Eliminar emisora\?</string>
+    <string name="dialog_yes_no_message_update_collection">¿Buscar por cambios\?</string>
+    <string name="dialog_yes_no_message_update_station_images">¿Descargar versión más reciente de las imagenes de las emisoras\?</string>
+    <string name="dialog_yes_no_positive_button_default">Iniciar</string>
+    <string name="dialog_yes_no_positive_button_remove_station">Eliminar</string>
+    <string name="dialog_yes_no_positive_button_update_collection">Actualizar</string>
+    <string name="dialog_yes_no_positive_button_update_covers">Actualizar</string>
+    
+	<!-- Fragment -->
+    <string name="fragment_settings_title">Configuración</string>
+    
+	<!-- Menu Entries -->
+    <string name="menu_icon">Cambiar icono</string>
+    <string name="menu_rename">Cambiar nombre</string>
+    <string name="menu_shortcut">Colocar en la pantalla de inicio</string>
+    <string name="menu_update">Actualizar emisora</string>
+    
+	<!-- Notification -->
+    <string name="notification_now_playing_channel_description">Controles de reproducción, nombre de emisora e imagen.</string>
+    <string name="notification_now_playing_channel_name">Controles de Reproducción</string>
+    <string name="notification_play">Reproducir</string>
+    <string name="notification_skip_to_next">Siguiente</string>
+    <string name="notification_skip_to_previous">Anterior</string>
+    <string name="notification_stop">Stop</string>
+    
+	<!-- Onboarding -->
+    <string name="onboarding_app_description">App radio</string>
+    <string name="onboarding_app_get_started">Empieza</string>
+    <string name="onboarding_app_import_running">Importando emisoras. Espere por favor.</string>
+    
+	<!-- Player -->
+    <string name="player_sheet_h2_station_metadata">Reproducción en curso</string>
+    <string name="player_sheet_h2_stream_url">Enlace de retransmisión</string>
+    
+	<!-- Settings -->
+    <string name="pref_about_title">Acerca de</string>
+    <string name="pref_app_version_summary">Versión</string>
+    <string name="pref_app_version_title">Versión de la Aplicación</string>
+    <string name="pref_general_title">General</string>
+    <string name="pref_maintenance_title">Mantenimiento</string>
+    <string name="pref_report_issue_summary">Reportar errores y sugerir mejoras en GitHub.</string>
+    <string name="pref_report_issue_title">Reportar un Problema</string>
+    <string name="pref_theme_selection_mode_dark">Modo oscuro</string>
+    <string name="pref_theme_selection_mode_device_default">Igual que el dispositivo</string>
+    <string name="pref_theme_selection_mode_light">Modo claro</string>
+    <string name="pref_theme_selection_summary">Tema actual:</string>
+    <string name="pref_theme_selection_title">Tema de la Aplicación</string>
+    <string name="pref_update_collection_summary">Buscar transmisiones de audio actualizadas y nuevas imagenes de emisoras.</string>
+    <string name="pref_update_collection_title">Actualizar Emisoras</string>
+    <string name="pref_update_station_images_summary">Descargar la versión más reciente de las imágenes de todas las emisoras.</string>
+    <string name="pref_update_station_images_title">Actualizar Imagen de Emisora</string>
+    
+	<!-- App Shortcuts -->
+    <string name="shortcut_last_station_disabled_message">Atajo para la reproducción de la última emisora desactivada.</string>
+    <string name="shortcut_last_station_long_label">Reproducir última emisora</string>
+    <string name="shortcut_last_station_short_label">Última emisora</string>
+    
+	<!-- Station List -->
+    <string name="station_list_button_add_new_station">Agregar nueva emisora</string>
+    
+	<!-- Toastalert -->
+    <string name="toastalert_no_image_picker">No hay ningún selector de imágenes disponible. Considere la posibilidad de instalar una aplicación de Galería.</string>
+    
+	<!-- Toasts -->
+    <string name="toastmessage_copied_to_clipboard">Se copió el enlace de retransmisión en el portapapeles.</string>
+    <string name="toastmessage_error_download_error">Error de descarga</string>
+    <string name="toastmessage_error_no_station_found">No pudo iniciarse la reproducción. Por favor, agregue primero una emisora.</string>
+    <string name="toastmessage_error_no_station_matches_search">No fue posible encontrar una emisora que concuerde con la búsqueda.</string>
+    <string name="toastmessage_error_restart_playback_failed">No pudo reiniciarse la reproducción.</string>
+    <string name="toastmessage_shortcut_created">Acceso directo creado.</string>
+    <string name="toastmessage_shortcut_not_created">Atajo no creado. Este dispositivo no permite la creación de accesos directos.</string>
+    <string name="toastmessage_sleep_timer_unable_to_start">Por favor, inicie reproducción primero.</string>
+    <string name="toastmessage_station_not_valid">Emisora no valida.</string>
+    <string name="toastmessage_updating_collection">Actualizando colección de emisoras.</string>
+    <string name="toastmessage_updating_station">Actualizando emisora.</string>
+    <string name="toastmessage_updating_station_images">Actualizando imágenes de emisora.</string>
+</resources>
