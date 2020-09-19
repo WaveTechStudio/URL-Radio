@@ -87,8 +87,8 @@ class NotificationHelper(private val playerService: PlayerService) {
                 .setShowActionsInCompactView(playPauseIndex)
                 .setShowCancelButton(true)
 
-        // todo !! Metadata
-        return builder.setContentIntent(controller.sessionActivity) // todo check if sessionActivity is correct
+        return builder.setCategory(NotificationCompat.CATEGORY_TRANSPORT)
+                .setContentIntent(controller.sessionActivity) // todo check if sessionActivity is correct
                 .setContentTitle(station.name)
                 .setContentText(metadata)
                 .setDeleteIntent(stopPendingIntent)

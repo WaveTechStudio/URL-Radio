@@ -22,7 +22,6 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.media.audiofx.AudioEffect
 import android.media.session.PlaybackState
-import android.net.Uri
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.ResultReceiver
@@ -38,10 +37,7 @@ import androidx.core.os.bundleOf
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.media.MediaBrowserServiceCompat
 import androidx.media.session.MediaButtonReceiver
-import com.google.android.exoplayer2.C
-import com.google.android.exoplayer2.PlaybackParameters
-import com.google.android.exoplayer2.Player
-import com.google.android.exoplayer2.SimpleExoPlayer
+import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.analytics.AnalyticsListener
 import com.google.android.exoplayer2.audio.AudioAttributes
 import com.google.android.exoplayer2.metadata.Metadata
@@ -394,11 +390,13 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
                 .setContentType(C.CONTENT_TYPE_MUSIC)
                 .setUsage(C.USAGE_MEDIA)
                 .build()
-        val player = SimpleExoPlayer.Builder(this).build()
+        val player = SimpleExoPlayer.Builder(this)
+                .setWakeMode(C.WAKE_MODE_NETWORK)
+                .setAudioAttributes(audioAttributes, true)
+                .setHandleAudioBecomingNoisy(true)
+                // player.setMediaSourceFactory() does not make sense here, since Transistor selects MediaSourceFactory based on stream type
+                .build()
         player.addListener(this@PlayerService)
-        player.setHandleAudioBecomingNoisy(true)
-        player.setWakeMode(C.WAKE_MODE_NETWORK)
-        player.setAudioAttributes(audioAttributes, true)
         player.addAnalyticsListener(analyticsListener)
         player.addMetadataOutput(this)
         return player
@@ -408,6 +406,10 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
     /* Prepares player with media source created from current station */
     private fun preparePlayer() {
         // todo only prepare if not already prepared
+
+        // build media item.
+        val mediaItem: MediaItem = MediaItem.fromUri(station.getStreamUri())
+
         // create DataSource.Factory - produces DataSource instances through which media data is loaded
         val dataSourceFactory: DataSource.Factory = createDataSourceFactory(this, Util.getUserAgent(this, userAgent), null)
 
@@ -416,14 +418,16 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         if (station.streamContent in Keys.MIME_TYPE_HLS || station.streamContent in Keys.MIME_TYPES_M3U) {
             // HLS media source
             //Toast.makeText(this, this.getString(R.string.toastmessage_stream_may_not_work), Toast.LENGTH_LONG).show()
-            mediaSource = HlsMediaSource.Factory(dataSourceFactory).createMediaSource(Uri.parse(station.getStreamUri()))
+            mediaSource = HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem)
         } else {
             // MPEG or OGG media source
-            mediaSource = ProgressiveMediaSource.Factory(dataSourceFactory).setContinueLoadingCheckIntervalBytes(32).createMediaSource(Uri.parse(station.getStreamUri()))
+            mediaSource = ProgressiveMediaSource.Factory(dataSourceFactory).setContinueLoadingCheckIntervalBytes(32).createMediaSource(mediaItem)
         }
 
-        // prepare player with source
-        player.prepare(mediaSource)
+        // set source and prepare player
+        player.setMediaSource(mediaSource)
+        // player.setMediaItem() - unable to use here, because different media items may need different MediaSourceFactories to work properly
+        player.prepare()
     }
 
 
@@ -508,7 +512,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             sleepTimer.cancel()
         }
         // initialize timer
-        sleepTimer = object:CountDownTimer (Keys.SLEEP_TIMER_DURATION + sleepTimerTimeRemaining, Keys.SLEEP_TIMER_INTERVAL) {
+        sleepTimer = object:CountDownTimer(Keys.SLEEP_TIMER_DURATION + sleepTimerTimeRemaining, Keys.SLEEP_TIMER_INTERVAL) {
             override fun onFinish() {
                 LogHelper.v(TAG, "Sleep timer finished. Sweet dreams.")
                 // reset time remaining
@@ -600,7 +604,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
 
 
     /* Updates and saves the state of the player ui */
-    private fun updatePlayerState (station: Station, playbackState: Int) {
+    private fun updatePlayerState(station: Station, playbackState: Int) {
         if (station.isValid()) {
             playerState.stationUuid = station.uuid
         }
@@ -691,7 +695,6 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         override fun onPlayFromMediaId(mediaId: String?, extras: Bundle?) {
             // get station, set metadata and start playback
             station = CollectionHelper.getStation(collection, mediaId ?: String())
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
@@ -763,7 +766,6 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getPreviousStation(collection, station.uuid)
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
@@ -775,7 +777,6 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
             }
             // get station, set metadata and start playback
             station = CollectionHelper.getNextStation(collection, station.uuid)
-//          mediaSession.setMetadata(CollectionHelper.buildStationMediaMetadata(this@PlayerService, station, metadataHistory.last())) // todo remove
             startPlayback()
         }
 
