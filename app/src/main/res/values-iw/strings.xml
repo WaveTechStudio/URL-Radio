@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">URL Radio</string>
+	
+    <!-- Descriptions -->
+    <string name="descr_app_icon">סמל אפליקציה המתאר רדיו ישן</string>
+    <string name="descr_card_settings_button">הגדרות</string>
+    <string name="descr_card_small_edit_button">ערוך</string>
+    <string name="descr_card_small_play_button">נגן/עצור</string>
+    <string name="descr_card_starred_station">תחנה מסומנת בכוכב</string>
+    <string name="descr_card_station_image">תמונת תחנה</string>
+    <string name="descr_dialog_edit_place_on_home_screen_icon">הוסף למסך הבית</string>
+    <string name="descr_dialog_edit_station_image">תמונת תחנה</string>
+    <string name="descr_dialog_edit_update_icon">עדכון</string>
+    <string name="descr_expanded_player_sleep_timer_cancel_button">בטל טיימר שינה</string>
+    <string name="descr_expanded_player_sleep_timer_remaining_time">זמן שנותר בטיימר שינה</string>
+    <string name="descr_expanded_player_sleep_timer_start_button">התחל טיימר שינה</string>
+    <string name="descr_player_playback_button">הפעל/השהה</string>
+    <string name="descr_player_station_image">תמונת תחנה</string>
+    <string name="descr_station_name_example">דוגמה FM</string>
+	
+    <!-- Dialogs -->
+    <string name="dialog_button_rename">שנה שם</string>
+    <string name="dialog_button_save">שמור שינויים</string>
+    <string name="dialog_edit_choose_station_image">בחר</string>
+    <string name="dialog_edit_place_on_home_screen">הוסף למסך הבית</string>
+    <string name="dialog_edit_title">ערוך תחנה</string>
+    <string name="dialog_edit_update_station">עדכן תחנה</string>
+    <string name="dialog_error_message_default">התרחשה שגיאה</string>
+    <string name="dialog_error_message_no_network">התחבר לאינטרנט.</string>
+    <string name="dialog_error_title_no_network">לא מקוון</string>
+    <string name="dialog_find_station_button_add">הוסף</string>
+    <string name="dialog_find_station_hint">שם או כתובת זרם</string>
+    <string name="dialog_find_station_no_results">לא נמצאו תוצאות.</string>
+    <string name="dialog_find_station_title">חפש תחנה</string>
+    <string name="dialog_generic_button_cancel">בטל</string>
+    <string name="dialog_generic_button_okay">בסדר</string>
+    <string name="dialog_generic_details_button">הצג פרטים</string>
+    <string name="dialog_opml_import_details_default">אין פרטים זמינים</string>
+    <string name="dialog_rename_station_input_hint">הזן שם חדש</string>
+    <string name="dialog_yes_no_message_remove_station">להסיר תחנה הזו\?</string>
+    <string name="dialog_yes_no_message_update_collection">לחפש שינויים\?</string>
+    <string name="dialog_yes_no_message_update_station_images">להוריד את הגרסה האחרונה של כל תמונות התחנה\?</string>
+    <string name="dialog_yes_no_positive_button_default">כן</string>
+    <string name="dialog_yes_no_positive_button_remove_station">הסר</string>
+    <string name="dialog_yes_no_positive_button_update_collection">עדכן</string>
+    <string name="dialog_yes_no_positive_button_update_covers">עדכן</string>
+	
+    <!-- Fragment -->
+    <string name="fragment_settings_title">הגדרות</string>
+	
+    <!-- Menu Entries -->
+    <string name="menu_icon">שינוי סמל</string>
+    <string name="menu_rename">שנה שם</string>
+    <string name="menu_shortcut">הוסף למסך הבית</string>
+    <string name="menu_update">עדכן תחנה</string>
+	
+    <!-- Notification -->
+    <string name="notification_now_playing_channel_description">פקדי השמעה, שם תחנה ותמונה.</string>
+    <string name="notification_now_playing_channel_name">פקדי השמעה</string>
+    <string name="notification_play">נגן</string>
+    <string name="notification_skip_to_next">הבא</string>
+    <string name="notification_skip_to_previous">קודם</string>
+    <string name="notification_stop">עצור</string>
+	
+    <!-- Onboarding -->
+    <string name="onboarding_app_description">אפליקציית רדיו</string>
+    <string name="onboarding_app_get_started">להתחיל</string>
+    <string name="onboarding_app_import_running">מייבא את התחנות שלך. המתן בבקשה.</string>
+	
+    <!-- Player -->
+    <string name="player_sheet_h2_station_metadata">מנגן כרגע</string>
+    <string name="player_sheet_h2_stream_url">קישור הזרמה</string>
+	
+    <!-- Settings -->
+    <string name="pref_about_title">אודות</string>
+    <string name="pref_app_version_summary">גרסה</string>
+    <string name="pref_app_version_title">גרסת האפליקציה</string>
+    <string name="pref_general_title">כללי</string>
+    <string name="pref_maintenance_title">תחזוקה</string>
+    <string name="pref_report_issue_summary">דווח על באגים והצעות שיפור ב- GitHub.</string>
+    <string name="pref_report_issue_title">דווח על בעייה</string>
+    <string name="pref_theme_selection_mode_dark">מצב כהה</string>
+    <string name="pref_theme_selection_mode_device_default">זהה למכשיר</string>
+    <string name="pref_theme_selection_mode_light">מצב בהיר</string>
+    <string name="pref_theme_selection_summary">ערכת נושא הנוכחית:</string>
+    <string name="pref_theme_selection_title">ערכת נושא לאפליקציה</string>
+    <string name="pref_update_collection_summary">חפש זרמי שמע מעודכנים ותמונות תחנה חדשות.</string>
+    <string name="pref_update_collection_title">עדכן תחנות</string>
+    <string name="pref_update_station_images_summary">הורד את הגרסה האחרונה של כל תמונות התחנה.</string>
+    <string name="pref_update_station_images_title">עדכן תמונות תחנה</string>
+	
+    <!-- App Shortcuts -->
+    <string name="shortcut_last_station_disabled_message">קיצור הדרך להפעלת התחנה האחרונה מושבת.</string>
+    <string name="shortcut_last_station_long_label">הפעל תחנה אחרונה</string>
+    <string name="shortcut_last_station_short_label">תחנה אחרונה</string>
+	
+    <!-- Station List -->
+    <string name="station_list_button_add_new_station">הוסף תחנה חדשה</string>
+	
+    <!-- Toastalert -->
+    <string name="toastalert_no_image_picker">אין בורר תמונות זמין. שקול להתקין יישום גלריה.</string>
+	
+    <!-- Toasts -->
+    <string name="toastmessage_copied_to_clipboard">הועתק ללוח.</string>
+    <string name="toastmessage_error_download_error">שגיאה בהורדה</string>
+    <string name="toastmessage_error_no_station_found">לא ניתן להתחיל את ההפעלה. אנא הוסף תחנת רדיו תחילה.</string>
+    <string name="toastmessage_error_no_station_matches_search">לא ניתן למצוא תחנה שתואמת את החיפוש שלך.</string>
+    <string name="toastmessage_error_restart_playback_failed">לא ניתן להפעיל מחדש את ההפעלה.</string>
+    <string name="toastmessage_shortcut_created">קיצור הדרך נוצר.</string>
+    <string name="toastmessage_shortcut_not_created">קיצור הדרך לא נוצר. מכשיר זה אינו מאפשר יצירת קיצורי דרך.</string>
+    <string name="toastmessage_sleep_timer_unable_to_start">התחל השמעה תחילה.</string>
+    <string name="toastmessage_station_not_valid">התחנה אינה תקפה.</string>
+    <string name="toastmessage_updating_collection">מעדכן אוסף התחנות.</string>
+    <string name="toastmessage_updating_station">מעדכן תחנה.</string>
+    <string name="toastmessage_updating_station_images">מעדכן תמונות תחנה.</string>
+</resources>
