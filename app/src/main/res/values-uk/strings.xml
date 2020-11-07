@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">URL Radio</string>
+	
+    <!-- Descriptions -->
+    <string name="descr_app_icon">Значок програми із зображенням старого радіо</string>
+    <string name="descr_card_settings_button">Налаштування</string>
+    <string name="descr_card_small_edit_button">Правити</string>
+    <string name="descr_card_small_play_button">Програвати/Зупинити</string>
+    <string name="descr_card_starred_station">Обрана станція</string>
+    <string name="descr_card_station_image">Зображення станції</string>
+    <string name="descr_dialog_edit_place_on_home_screen_icon">Помістити на головний екран</string>
+    <string name="descr_dialog_edit_station_image">Зображення станції</string>
+    <string name="descr_dialog_edit_update_icon">Оновити</string>
+    <string name="descr_expanded_player_sleep_timer_cancel_button">Скасувати відлік сну</string>
+    <string name="descr_expanded_player_sleep_timer_remaining_time">Час, що залишився на відліці сну</string>
+    <string name="descr_expanded_player_sleep_timer_start_button">Запустити відлік сну</string>
+    <string name="descr_player_playback_button">Відтворення/Зупинка</string>
+    <string name="descr_player_station_image">Зображення станції</string>
+    <string name="descr_station_name_example">Приклад FM</string>
+	
+    <!-- Dialogs -->
+    <string name="dialog_button_rename">Перейменувати</string>
+    <string name="dialog_button_save">Зберегти зміни</string>
+    <string name="dialog_edit_choose_station_image">Обрати</string>
+    <string name="dialog_edit_place_on_home_screen">Розмістити на головному екрані</string>
+    <string name="dialog_edit_title">Правити станцію</string>
+    <string name="dialog_edit_update_station">Оновити станцію</string>
+    <string name="dialog_error_message_default">Трапилась помилка</string>
+    <string name="dialog_error_message_no_network">Підключитися до Інтернету.</string>
+    <string name="dialog_error_title_no_network">Безмережно</string>
+    <string name="dialog_find_station_button_add">Додати</string>
+    <string name="dialog_find_station_hint">Назва або адреса потоку</string>
+    <string name="dialog_find_station_no_results">Нема підсумків.</string>
+    <string name="dialog_find_station_title">Знайти станцію</string>
+    <string name="dialog_generic_button_cancel">Скасувати</string>
+    <string name="dialog_generic_button_okay">Гаразд</string>
+    <string name="dialog_generic_details_button">Показати подробиці</string>
+    <string name="dialog_opml_import_details_default">Подробиці недоступні</string>
+    <string name="dialog_rename_station_input_hint">Ввести нову назву</string>
+    <string name="dialog_yes_no_message_remove_station">Видалити цю станцію\?</string>
+    <string name="dialog_yes_no_message_update_collection">Шукати зміни\?</string>
+    <string name="dialog_yes_no_message_update_station_images">Завантажити останню версію всіх зображень станцій\?</string>
+    <string name="dialog_yes_no_positive_button_default">Так</string>
+    <string name="dialog_yes_no_positive_button_remove_station">Видалити</string>
+    <string name="dialog_yes_no_positive_button_update_collection">Оновити</string>
+    <string name="dialog_yes_no_positive_button_update_covers">Оновити</string>
+	
+    <!-- Fragment -->
+    <string name="fragment_settings_title">Налаштування</string>
+	
+    <!-- Menu Entries -->
+    <string name="menu_icon">Змінити піктограму</string>
+    <string name="menu_rename">Перейменувати</string>
+    <string name="menu_shortcut">Розмістити на домашньому екрані</string>
+    <string name="menu_update">Оновити станцію</string>
+	
+    <!-- Notification -->
+    <string name="notification_now_playing_channel_description">Керунки відтворенням, назва станції та зображення.</string>
+    <string name="notification_now_playing_channel_name">Керунки відтворенням</string>
+    <string name="notification_play">Грати</string>
+    <string name="notification_skip_to_next">Наступна</string>
+    <string name="notification_skip_to_previous">Попередня</string>
+    <string name="notification_stop">Призупинити</string>
+	
+    <!-- Onboarding -->
+    <string name="onboarding_app_description">Радіо-додаток</string>
+    <string name="onboarding_app_get_started">Розпочати</string>
+    <string name="onboarding_app_import_running">Імпорт ваших станцій. Будь ласка, почекайте.</string>
+	
+    <!-- Player -->
+    <string name="player_sheet_h2_station_metadata">В даний час грає</string>
+    <string name="player_sheet_h2_stream_url">URL потоку</string>
+	
+    <!-- Settings -->
+    <string name="pref_about_title">Про нас</string>
+    <string name="pref_app_version_summary">Версія</string>
+    <string name="pref_app_version_title">Версія застосунку</string>
+    <string name="pref_general_title">Загальне</string>
+    <string name="pref_maintenance_title">Обслуговування</string>
+    <string name="pref_report_issue_summary">Повідомте про помилки та запропонуйте вдосконалення на GitHub.</string>
+    <string name="pref_report_issue_title">Повідомити про помилку</string>
+    <string name="pref_theme_selection_mode_dark">Темний режим</string>
+    <string name="pref_theme_selection_mode_device_default">Усталено</string>
+    <string name="pref_theme_selection_mode_light">Світлий режим</string>
+    <string name="pref_theme_selection_summary">Поточна тема:</string>
+    <string name="pref_theme_selection_title">Тема застосунку</string>
+    <string name="pref_update_collection_summary">Шукайте оновлені аудіопотоки та нові зображення станцій.</string>
+    <string name="pref_update_collection_title">Оновити станції</string>
+    <string name="pref_update_station_images_summary">Завантажити останню версію всіх зображень станцій.</string>
+    <string name="pref_update_station_images_title">Оновити зображення станцій</string>
+	
+    <!-- App Shortcuts -->
+    <string name="shortcut_last_station_disabled_message">Ярлик для відтворення останньої станції відключений.</string>
+    <string name="shortcut_last_station_long_label">Відтворити останню станцію</string>
+    <string name="shortcut_last_station_short_label">Остання станція</string>
+	
+    <!-- Station List -->
+    <string name="station_list_button_add_new_station">Додати нову станцію</string>
+	
+    <!-- Toastalert -->
+    <string name="toastalert_no_image_picker">Немає доступних зображень образів. Спробуйте встановити додаток галереї.</string>
+	
+    <!-- Toasts -->
+    <string name="toastmessage_copied_to_clipboard">Потокове посилання скопійовано до буферу обміну.</string>
+    <string name="toastmessage_error_download_error">Помилка завантаження</string>
+    <string name="toastmessage_error_no_station_found">Не вдається розпочати відтворення. Спочатку додайте радіостанцію.</string>
+    <string name="toastmessage_error_no_station_matches_search">Не вдається знайти станцію, яка відповідає вашому пошуку.</string>
+    <string name="toastmessage_error_restart_playback_failed">Неможливо перезапустити відтворення.</string>
+    <string name="toastmessage_shortcut_created">Посилання створено.</string>
+    <string name="toastmessage_shortcut_not_created">Ярлик не створено. Цей пристрій не дозволяє створювати ярлики.</string>
+    <string name="toastmessage_sleep_timer_unable_to_start">Будь ласка, спочатку почніть відтворення.</string>
+    <string name="toastmessage_station_not_valid">Станція недійсна.</string>
+    <string name="toastmessage_updating_collection">Оновлення набору станцій.</string>
+    <string name="toastmessage_updating_station">Оновлення станції.</string>
+    <string name="toastmessage_updating_station_images">Оновлення зображень станції.</string>
+</resources>
