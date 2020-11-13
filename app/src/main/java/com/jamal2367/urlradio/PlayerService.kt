@@ -283,7 +283,7 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
         if (!collectionProvider.isInitialized()) {
             // use result.detach to allow calling result.sendResult from another thread:
             result.detach()
-            collectionProvider.retrieveMedia(collection, object: CollectionProvider.CollectionProviderCallback {
+            collectionProvider.retrieveMedia(this, collection, object: CollectionProvider.CollectionProviderCallback {
                 override fun onStationListReady(success: Boolean) {
                     if (success) {
                         loadChildren(parentId, result)

@@ -15,6 +15,7 @@
 
 package com.jamal2367.urlradio.collection
 
+import android.content.Context
 import android.support.v4.media.MediaBrowserCompat
 import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
@@ -49,7 +50,7 @@ class CollectionProvider {
 
 
     /* Gets list of stations and caches meta information in list of MediaMetaItems */
-    fun retrieveMedia(collection: Collection, stationListProviderCallback: CollectionProviderCallback) {
+    fun retrieveMedia(context: Context, collection: Collection, stationListProviderCallback: CollectionProviderCallback) {
         if (currentState == State.INITIALIZED) {
             // already initialized, set callback immediately
             stationListProviderCallback.onStationListReady(true)
@@ -57,7 +58,7 @@ class CollectionProvider {
             // sort station list by name
             val stationListSorted: List<Station> = collection.stations.sortedBy { it.name }
             stationListSorted.forEach { station ->
-                    stationListByName.add(CollectionHelper.buildStationMediaMetaItem(station))
+                stationListByName.add(CollectionHelper.buildStationMediaMetaItem(context, station))
             }
             // afterwards: update state and set callback
             currentState = State.INITIALIZED
