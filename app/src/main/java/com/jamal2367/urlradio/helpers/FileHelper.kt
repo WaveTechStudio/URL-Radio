@@ -25,6 +25,10 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlin.coroutines.resume
+import kotlin.coroutines.suspendCoroutine
+import kotlin.math.ln
+import kotlin.math.pow
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
@@ -32,8 +36,6 @@ import java.io.*
 import java.net.URL
 import java.text.NumberFormat
 import java.util.*
-import kotlin.coroutines.resume
-import kotlin.coroutines.suspendCoroutine
 
 
 /*
@@ -379,13 +381,13 @@ object FileHelper {
         if (bytes < unit) return "$bytes B"
 
         // calculate exp
-        val exp: Int = (Math.log(bytes.toDouble()) / Math.log(unit.toDouble())).toInt()
+        val exp: Int = (ln(bytes.toDouble()) / ln(unit.toDouble())).toInt()
 
         // determine prefix symbol
         val prefix: String = ((if (si) "kMGTPE" else "KMGTPE")[exp - 1] + if (si) "" else "i")
 
         // calculate result and set number format
-        val result: Double = bytes / Math.pow(unit.toDouble(), exp.toDouble())
+        val result: Double = bytes / unit.toDouble().pow(exp.toDouble())
         val numberFormat = NumberFormat.getNumberInstance()
         numberFormat.maximumFractionDigits = 1
 

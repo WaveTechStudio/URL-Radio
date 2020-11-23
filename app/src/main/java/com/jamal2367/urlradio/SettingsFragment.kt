@@ -18,11 +18,12 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.preference.*
 import com.jamal2367.urlradio.dialogs.ErrorDialog
@@ -30,7 +31,6 @@ import com.jamal2367.urlradio.dialogs.YesNoDialog
 import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.NetworkHelper
-
 
 /*
  * SettingsFragment class
@@ -74,7 +74,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         preferenceThemeSelection.setOnPreferenceChangeListener { preference, newValue ->
             if (preference is ListPreference) {
                 val index: Int = preference.entryValues.indexOf(newValue)
-                preferenceThemeSelection.summary = "${getString(R.string.pref_theme_selection_summary)} ${preference.entries.get(index)}"
+                preferenceThemeSelection.summary = "${getString(R.string.pref_theme_selection_summary)} ${preference.entries[index]}"
                 return@setOnPreferenceChangeListener true
             } else {
                 return@setOnPreferenceChangeListener false
@@ -126,7 +126,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
             // open web browser
             val intent = Intent().apply {
                 action = Intent.ACTION_VIEW
-                data = Uri.parse("https://github.com/jamal2362/URL-Radio/issues")
+                data = "https://github.com/jamal2362/URL-Radio/issues".toUri()
             }
             startActivity(intent)
             return@setOnPreferenceClickListener true
@@ -207,8 +207,9 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         if (NetworkHelper.isConnectedToNetwork(activity as Context)) {
             Toast.makeText(activity as Context, R.string.toastmessage_updating_collection, Toast.LENGTH_LONG).show()
             // update collection in player screen
-            val bundle: Bundle = Bundle()
-            bundle.putBoolean(Keys.ARG_UPDATE_COLLECTION, true)
+            val bundle: Bundle = bundleOf(
+                    Keys.ARG_UPDATE_COLLECTION to true
+            )
             this.findNavController().navigate(R.id.player_destination, bundle)
         } else {
             ErrorDialog().show(activity as Context, R.string.dialog_error_title_no_network, R.string.dialog_error_message_no_network)
@@ -221,8 +222,9 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         if (NetworkHelper.isConnectedToNetwork(activity as Context)) {
             Toast.makeText(activity as Context, R.string.toastmessage_updating_station_images, Toast.LENGTH_LONG).show()
             // update collection in player screen
-            val bundle: Bundle = Bundle()
-            bundle.putBoolean(Keys.ARG_UPDATE_IMAGES, true)
+            val bundle: Bundle = bundleOf(
+                    Keys.ARG_UPDATE_IMAGES to true
+            )
             this.findNavController().navigate(R.id.player_destination, bundle)
         } else {
             ErrorDialog().show(activity as Context, R.string.dialog_error_title_no_network, R.string.dialog_error_message_no_network)
