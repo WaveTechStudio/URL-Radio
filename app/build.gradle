@@ -11,10 +11,10 @@ android {
         applicationId 'com.jamal2367.urlradio'
         minSdkVersion 25
         targetSdkVersion 30
-        versionCode 60
-        versionName '6.0.0'
-        resConfigs "en", "de", "es", "fr", "he", "hr", "in", "it", "iw", "nb-rNO", "pl", "pt", "pt-rBR", "ru", "tr", "uk", "zh-rCN"
-        setProperty("archivesBaseName", "URL_Radio_v" + versionName)
+        versionCode 61
+        versionName '6.1.0'
+        resConfigs 'en', 'de', 'es', 'fr', 'he', 'hr', 'in', 'it', 'iw', 'nb-rNO', 'pl', 'pt', 'pt-rBR', 'ru', 'tr', 'uk', 'zh-rCN'
+        setProperty("archivesBaseName", 'URL_Radio_v' + versionName)
     }
 
     kotlinOptions {
@@ -24,6 +24,12 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
+        exclude 'DebugProbesKt.bin'
+        exclude '**/kotlin/**'
     }
 
     buildTypes {
@@ -40,28 +46,28 @@ dependencies {
 
     // Kotlin //
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
 
     // Material //
-    implementation "com.google.android.material:material:1.2.1"
+    implementation 'com.google.android.material:material:1.2.1'
 
     // Exoplayer //
-    implementation "com.google.android.exoplayer:exoplayer:2.12.1"
-    implementation "com.google.android.exoplayer:extension-mediasession:2.12.1"
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.1'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.12.1'
 
     // Google Stuff //
-    implementation "com.google.code.gson:gson:2.8.6"
-    implementation "android.arch.work:work-runtime-ktx:1.0.1"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'android.arch.work:work-runtime-ktx:1.0.1'
 
     // AndroidX Stuff //
-    implementation "androidx.activity:activity-ktx:1.1.0"
-    implementation "androidx.appcompat:appcompat:1.2.0"
-    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
-    implementation "androidx.core:core-ktx:1.3.2"
-    implementation "androidx.activity:activity-ktx:1.1.0"
-    implementation "androidx.palette:palette-ktx:1.0.0"
-    implementation "androidx.preference:preference-ktx:1.1.1"
+    implementation 'androidx.activity:activity-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.activity:activity-ktx:1.1.0'
+    implementation 'androidx.palette:palette-ktx:1.0.0'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
