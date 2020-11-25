@@ -18,7 +18,7 @@ import android.os.Parcelable
 import android.support.v4.media.session.PlaybackStateCompat
 import androidx.annotation.Keep
 import com.google.gson.annotations.Expose
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 import com.jamal2367.urlradio.Keys
 import java.util.*
 
