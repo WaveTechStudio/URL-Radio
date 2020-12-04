@@ -6,7 +6,7 @@
         <!-- Set AppCompat’s colors -->
         <item name="colorPrimary">@color/urlradio_grey_dark</item>
         <item name="colorPrimaryDark">@color/urlradio_grey_darker</item>
-        <item name="colorAccent">@color/urlradio_blue</item>
+        <item name="colorAccent">@color/urlradio_red</item>
 
         <!-- Show white status bar -->
         <item name="android:windowLightStatusBar">true</item>
@@ -17,10 +17,6 @@
 
         <!-- Default window background used for resizing on v24) -->
         <item name="android:windowBackgroundFallback">@color/urlradio_grey_darker</item>
-
-        <!-- Colors used by playback seek bar -->
-        <!-- <item name="android:colorControlActivated"></item> -->
-        <!-- <item name="android:colorControlNormal"></item> -->
     </style>
 
     <style name="RoundedCorners" parent="">

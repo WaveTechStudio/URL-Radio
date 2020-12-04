@@ -15,15 +15,15 @@
     <color name="icon_default">@color/urlradio_grey</color>
     <color name="icon_lightweight">@color/urlradio_grey_light</color>
 
-    <color name="player_button_background">@color/urlradio_blue</color>
+    <color name="player_button_background">@color/urlradio_red</color>
     <color name="player_sheet_text_main">@color/urlradio_white</color>
     <color name="player_sheet_background">@color/urlradio_grey_dark</color>
     <color name="player_sheet_background_border">@color/urlradio_grey_dark</color>
     <color name="player_sheet_icon">@color/urlradio_white</color>
 
     <color name="list_card_background">@color/urlradio_white</color>
-    <color name="list_card_delete_background">@color/urlradio_red</color>
-    <color name="list_card_mark_starred_background">@color/urlradio_green</color>
+    <color name="list_card_delete_background">@color/urlradio_red_card</color>
+    <color name="list_card_mark_starred_background">@color/urlradio_green_card</color>
 
     <color name="search_result_background">@color/urlradio_grey_very_light</color>
     <color name="search_result_background_selected">@color/urlradio_grey_lighter</color>
@@ -36,12 +36,12 @@
     <color name="urlradio_grey_dark">#FF313131</color>
     <color name="urlradio_grey_darker">#FF2D2D2D</color>
 
-    <color name="urlradio_blue">#FF2196F3</color>
-    <color name="urlradio_blue_lighter">#FF64B5F6</color>
+    <color name="urlradio_green_card">#FF00C853</color>
+    <color name="urlradio_red_card">#FFDC3D33</color>
 
-    <color name="urlradio_green">#FF00C853</color>
-
-    <color name="urlradio_red">#FFDC3D33</color>
+    <color name="urlradio_red">#FFF44336</color>
+    <color name="urlradio_red_dark">#FFEF9A9A</color>
+    <color name="urlradio_red_lighter">#FFE57373</color>
 
     <color name="urlradio_black">#FF232323</color>
     <color name="urlradio_white">#FFFFFFFF</color>
