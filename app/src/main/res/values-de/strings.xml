@@ -81,10 +81,10 @@
     <string name="pref_maintenance_title">Wartung</string>
     <string name="pref_report_issue_summary">Fehler auf GitHub melden und Verbesserungen vorschlagen</string>
     <string name="pref_report_issue_title">Fehler melden</string>
-    <string name="pref_theme_selection_mode_dark">Dunkler Modus</string>
-    <string name="pref_theme_selection_mode_device_default">Identisch zum Gerät</string>
-    <string name="pref_theme_selection_mode_light">Heller Modus</string>
-    <string name="pref_theme_selection_summary">Aktuelles Design:</string>
+    <string name="pref_theme_selection_mode_dark">Dunkles Design</string>
+    <string name="pref_theme_selection_mode_device_default">Systemstandard</string>
+    <string name="pref_theme_selection_mode_light">Helles Design</string>
+    <string name="pref_theme_selection_summary">Aktuell:</string>
     <string name="pref_theme_selection_title">App-Design</string>
     <string name="pref_update_collection_summary">Suche nach aktualisierten Audiostreams und neuen Senderbildern</string>
     <string name="pref_update_collection_title">Sender aktualisieren</string>
