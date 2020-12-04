@@ -24,7 +24,7 @@
     <color name="list_card_delete_background">@color/urlradio_red_card</color>
     <color name="list_card_mark_starred_background">@color/urlradio_green_card</color>
 
-    <color name="search_result_background">@color/urlradio_grey_dark</color>
+    <color name="search_result_background">@color/urlradio_grey_darkest</color>
     <color name="search_result_background_selected">@color/urlradio_grey</color>
 
 </resources>

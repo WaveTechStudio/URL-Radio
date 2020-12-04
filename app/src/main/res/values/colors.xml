@@ -24,16 +24,18 @@
     <color name="list_card_delete_background">@color/urlradio_red_card</color>
     <color name="list_card_mark_starred_background">@color/urlradio_green_card</color>
 
-    <color name="search_result_background">@color/urlradio_grey_very_light</color>
+    <color name="search_result_background">@color/urlradio_grey_very_lighter</color>
     <color name="search_result_background_selected">@color/urlradio_grey_lighter</color>
 
     <!-- COLOR NAMES -->
     <color name="urlradio_grey">#FF595959</color>
     <color name="urlradio_grey_light">#FF7D7D7D</color>
-    <color name="urlradio_grey_lighter">#FFDADADA</color>
+    <color name="urlradio_grey_lighter">#FFC7C7C7</color>
     <color name="urlradio_grey_very_light">#FFF2F2F2</color>
+    <color name="urlradio_grey_very_lighter">#FFE6E6E6</color>
     <color name="urlradio_grey_dark">#FF313131</color>
     <color name="urlradio_grey_darker">#FF2D2D2D</color>
+    <color name="urlradio_grey_darkest">#FF2A2A2A</color>
 
     <color name="urlradio_green_card">#FF00C853</color>
     <color name="urlradio_red_card">#FFDC3D33</color>
@@ -44,6 +46,6 @@
 
     <color name="urlradio_black">#FF232323</color>
     <color name="urlradio_white">#FFFFFFFF</color>
-    <color name="urlradio_transparent">#00ffffff</color>
+    <color name="urlradio_transparent">#00FFFFFF</color>
 
 </resources>
