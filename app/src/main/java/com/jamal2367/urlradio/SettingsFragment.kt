@@ -31,6 +31,7 @@ import com.jamal2367.urlradio.dialogs.YesNoDialog
 import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.NetworkHelper
+import java.util.*
 
 /*
  * SettingsFragment class
@@ -135,16 +136,16 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
 
         // set preference categories
         val preferenceCategoryGeneral: PreferenceCategory = PreferenceCategory(activity as Context)
-        preferenceCategoryGeneral.title = getString(R.string.pref_general_title)
+        preferenceCategoryGeneral.title = getString(R.string.pref_general_title).toUpperCase(Locale.ROOT)
         preferenceCategoryGeneral.contains(preferenceThemeSelection)
 
         val preferenceCategoryMaintenance: PreferenceCategory = PreferenceCategory(activity as Context)
-        preferenceCategoryMaintenance.title = getString(R.string.pref_maintenance_title)
+        preferenceCategoryMaintenance.title = getString(R.string.pref_maintenance_title).toUpperCase(Locale.ROOT)
         preferenceCategoryMaintenance.contains(preferenceUpdateCollection)
         preferenceCategoryMaintenance.contains(preferenceUpdateStationImages)
 
         val preferenceCategoryAbout: PreferenceCategory = PreferenceCategory(context)
-        preferenceCategoryAbout.title = getString(R.string.pref_about_title)
+        preferenceCategoryAbout.title = getString(R.string.pref_about_title).toUpperCase(Locale.ROOT)
         preferenceCategoryAbout.contains(preferenceAppVersion)
         preferenceCategoryAbout.contains(preferenceReportIssue)
 
