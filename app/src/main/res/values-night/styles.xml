@@ -18,13 +18,28 @@
 
         <!-- Default window background used for resizing on v24 -->
         <item name="android:windowBackgroundFallback">@color/urlradio_black</item>
+
+        <!-- Custom Font -->
+        <item name="android:textViewStyle">@style/SansTextViewStyle</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+    </style>
+
+    <style name="SansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/google_sans_medium</item>
     </style>
 
     <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
         <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
     </style>
 
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:textColor">@color/urlradio_white</item>
+    </style>
+
     <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
         <item name="android:textColor">@color/urlradio_red_dark</item>
     </style>
 

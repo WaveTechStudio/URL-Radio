@@ -16,12 +16,6 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <!-- <item
-        android:id="@+id/menu_delete"
-        android:title="@string/menu_delete"
-        android:orderInCategory="100"
-        app:showAsAction="never" /> -->
-
     <item
         android:id="@+id/menu_update"
         android:title="@string/menu_update"

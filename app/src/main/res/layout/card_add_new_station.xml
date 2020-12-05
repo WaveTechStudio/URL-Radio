@@ -24,6 +24,7 @@
             android:id="@+id/text_add_new_station"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="8dp"
             android:text="@string/station_list_button_add_new_station"
