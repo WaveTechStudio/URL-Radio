@@ -37,7 +37,7 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textColor="@color/text_lightweight"
+            android:textColor="@color/icon_default"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/menu_button"
             app:layout_constraintStart_toEndOf="@+id/starred_icon"
