@@ -24,6 +24,7 @@
             android:id="@+id/edit_station_input_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="50"
             android:fontFamily="@font/google_sans_bold"/>
 
     </com.google.android.material.textfield.TextInputLayout>
