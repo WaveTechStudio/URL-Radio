@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.app.Notification
@@ -33,7 +32,6 @@ import com.jamal2367.urlradio.extensions.isFastForwardEnabled
 import com.jamal2367.urlradio.extensions.isPlayEnabled
 import com.jamal2367.urlradio.extensions.isPlaying
 import com.jamal2367.urlradio.extensions.isRewindEnabled
-
 
 /*
  * NotificationHelper class

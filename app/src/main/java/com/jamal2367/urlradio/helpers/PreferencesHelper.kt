@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
@@ -24,7 +23,6 @@ import com.google.gson.Gson
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.ui.PlayerState
 import java.util.*
-
 
 /*
  * PreferencesHelper object

@@ -8,9 +8,8 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:name=".URLRadio"
@@ -25,7 +24,7 @@
 
         <!-- ANDROID AUTO SUPPORT -->
         <meta-data android:name="com.google.android.gms.car.application"
-            android:resource="@xml/automotive_app_desc"/>
+            android:resource="@xml/automotive_app_desc" />
         <meta-data android:name="com.google.android.gms.car.notification.SmallIcon"
             android:resource="@mipmap/ic_launcher" />
 
@@ -109,7 +108,6 @@
 
         </activity>
 
-
         <!-- Player Service -->
         <service
             android:name=".PlayerService"
@@ -117,19 +115,17 @@
             android:stopWithTask="false"
             tools:ignore="ExportedService">
             <intent-filter>
-                <action android:name="android.media.browse.MediaBrowserService"/>
+                <action android:name="android.media.browse.MediaBrowserService" />
                 <action android:name="com.jamal2367.urlradio.action.START_PLAYER_SERVICE" />
             </intent-filter>
         </service>
 
-
         <!-- handles completed downloads -->
-        <receiver android:name=".helpers.DownloadFinishedReceiver" >
+        <receiver android:name=".helpers.DownloadFinishedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
             </intent-filter>
         </receiver>
-
 
         <!-- handles media buttons -->
         <receiver android:name="androidx.media.session.MediaButtonReceiver">
@@ -146,7 +142,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
 
     </application>

@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.collection
 
 import android.app.Application
@@ -28,7 +27,6 @@ import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.helpers.FileHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import java.util.*
-
 
 /*
  * CollectionViewModel.class

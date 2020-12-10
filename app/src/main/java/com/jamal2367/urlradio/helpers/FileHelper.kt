@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.ContentResolver
@@ -36,7 +35,6 @@ import java.io.*
 import java.net.URL
 import java.text.NumberFormat
 import java.util.*
-
 
 /*
  * FileHelper object

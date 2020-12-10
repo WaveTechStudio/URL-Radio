@@ -12,7 +12,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.collection
 
 import android.content.Context
@@ -20,7 +19,6 @@ import android.support.v4.media.MediaBrowserCompat
 import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.helpers.CollectionHelper
-
 
 /**
  * CollectionProvider.class

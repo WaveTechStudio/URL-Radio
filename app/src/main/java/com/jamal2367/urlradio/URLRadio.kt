@@ -11,14 +11,12 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio
 
 import android.app.Application
 import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.PreferencesHelper
-
 
 /**
  * URLRadio.class

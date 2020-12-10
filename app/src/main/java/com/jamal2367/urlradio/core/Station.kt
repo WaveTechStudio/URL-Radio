@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.core
 
 import android.os.Parcelable
@@ -21,7 +20,6 @@ import com.google.gson.annotations.Expose
 import kotlinx.parcelize.Parcelize
 import com.jamal2367.urlradio.Keys
 import java.util.*
-
 
 /*
  * Station class

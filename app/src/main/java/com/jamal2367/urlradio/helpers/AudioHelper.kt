@@ -11,13 +11,11 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
 import android.media.MediaMetadataRetriever
 import android.net.Uri
-
 
 /*
  * AudioHelper object

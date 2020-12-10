@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
@@ -28,7 +27,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.R
-
 
 /*
  * UiHelper object
@@ -217,8 +215,4 @@ object UiHelper {
     /*
      * End of inner class
      */
-
-
-
-
 }

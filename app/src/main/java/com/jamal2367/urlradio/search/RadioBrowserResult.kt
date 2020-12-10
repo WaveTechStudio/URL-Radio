@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.search
 
 import android.support.v4.media.session.PlaybackStateCompat
@@ -19,7 +18,6 @@ import com.google.gson.annotations.Expose
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.core.Station
 import java.util.*
-
 
 /*
  * RadioBrowserResult class
@@ -53,7 +51,6 @@ data class RadioBrowserResult (@Expose val changeuuid: String,
             radioBrowserChangeUuid = changeuuid)
 
 }
-
 
 /*
 JSON Struct Station

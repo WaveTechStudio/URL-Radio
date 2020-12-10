@@ -22,7 +22,6 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jamal2367.urlradio.R
 import com.jamal2367.urlradio.helpers.LogHelper
 
-
 /*
  * RenameStationDialog class
  */

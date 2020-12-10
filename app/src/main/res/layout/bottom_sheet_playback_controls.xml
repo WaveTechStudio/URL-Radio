@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_sheet"
@@ -98,6 +99,7 @@
         app:layout_constraintTop_toTopOf="@+id/player_background" />
 
     <ImageView
+        android:contentDescription="@null"
         android:id="@+id/sheet_streaming_link_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -136,6 +138,7 @@
         tools:text="@string/sample_text_steam_url" />
 
     <ImageView
+        android:contentDescription="@null"
         android:id="@+id/sheet_previous_metadata_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -178,6 +181,7 @@
 
 
     <ImageView
+        android:contentDescription="@null"
         android:id="@+id/sheet_next_metadata_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

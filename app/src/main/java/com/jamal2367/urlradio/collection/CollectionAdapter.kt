@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.collection
 
 import android.content.Context
@@ -43,7 +42,6 @@ import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.dialogs.EditStationDialog
 import com.jamal2367.urlradio.dialogs.RenameStationDialog
 import com.jamal2367.urlradio.helpers.*
-
 
 /*
  * CollectionAdapter class

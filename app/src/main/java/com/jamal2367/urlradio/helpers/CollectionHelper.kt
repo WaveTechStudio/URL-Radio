@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
@@ -33,7 +32,6 @@ import com.jamal2367.urlradio.search.RadioBrowserResult
 import java.io.File
 import java.net.URL
 import java.util.*
-
 
 /*
  * CollectionHelper object

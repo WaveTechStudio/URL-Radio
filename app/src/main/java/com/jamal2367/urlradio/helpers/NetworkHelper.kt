@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
@@ -27,7 +26,6 @@ import java.net.UnknownHostException
 import java.util.*
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
-
 
 /*
  * NetworkHelper object
@@ -193,6 +191,5 @@ object NetworkHelper {
 
         return connection
     }
-
 
 }

@@ -12,12 +12,10 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.extensions
 
 import android.os.SystemClock
 import android.support.v4.media.session.PlaybackStateCompat
-
 
 inline val PlaybackStateCompat.isPrepared
     get() = (state == PlaybackStateCompat.STATE_BUFFERING) ||

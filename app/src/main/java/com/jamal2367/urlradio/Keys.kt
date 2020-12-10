@@ -11,11 +11,9 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio
 
 import java.util.*
-
 
 /*
  * Keys object
@@ -180,14 +178,14 @@ object Keys {
     // sizes (in dp)
     const val SIZE_COVER_NOTIFICATION_LARGE_ICON: Int = 256
     const val SIZE_COVER_LOCK_SCREEN: Int = 320
-    const val SIZE_STATION_IMAGE_CARD: Int = 72 // todo adjust according to layout
+    const val SIZE_STATION_IMAGE_CARD: Int = 72
     const val SIZE_STATION_IMAGE_MAXIMUM: Int = 640
     const val SIZE_STATION_IMAGE_LOCK_SCREEN: Int = 320
     const val BOTTOM_SHEET_PEEK_HEIGHT: Int = 72
 
     // default values
     val DEFAULT_DATE: Date = Date(0L)
-    const val DEFAULT_RFC2822_DATE: String = "Thu, 01 Jan 1970 01:00:00 +0100" // --> Date(0)
+    const val DEFAULT_RFC2822_DATE: String = "Thu, 01 Jan 1970 01:00:00 +0100"
     const val EMPTY_STRING_RESOURCE: Int = 0
 
     // requests

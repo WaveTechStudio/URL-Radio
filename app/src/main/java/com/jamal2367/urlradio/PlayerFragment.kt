@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio
 
 import android.Manifest
@@ -60,7 +59,6 @@ import com.jamal2367.urlradio.ui.LayoutHolder
 import com.jamal2367.urlradio.ui.PlayerState
 import java.util.*
 import kotlin.coroutines.CoroutineContext
-
 
 /*
  * PlayerFragment class

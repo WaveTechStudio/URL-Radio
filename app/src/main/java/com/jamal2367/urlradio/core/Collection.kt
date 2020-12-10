@@ -20,7 +20,6 @@ import kotlinx.parcelize.Parcelize
 import com.jamal2367.urlradio.Keys
 import java.util.*
 
-
 /*
  * Collection class
  */

@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.app.Activity
@@ -21,7 +20,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.R
-
 
 /*
  * AppThemeHelper object

@@ -12,9 +12,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.extensions
-
 
 /* Creates a "real" copy of an ArrayList<Long> - useful for preventing concurrent modification issues */
 fun ArrayList<Long>.copy(): ArrayList<Long> {

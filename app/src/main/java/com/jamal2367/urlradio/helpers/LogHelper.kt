@@ -11,14 +11,12 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
 import android.util.Log
 import com.jamal2367.urlradio.BuildConfig
 import java.util.*
-
 
 /*
  * LogHelper object

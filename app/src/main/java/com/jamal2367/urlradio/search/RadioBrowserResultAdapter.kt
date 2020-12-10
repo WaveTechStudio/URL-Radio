@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.search
 
 import android.view.LayoutInflater
@@ -21,7 +20,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textview.MaterialTextView
 import com.jamal2367.urlradio.R
 import com.jamal2367.urlradio.helpers.LogHelper
-
 
 /*
  * RadioBrowserResult class

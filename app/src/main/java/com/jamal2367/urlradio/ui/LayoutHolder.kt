@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.ui
 
 import android.content.ClipData
@@ -37,7 +36,6 @@ import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.R
 import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.helpers.*
-
 
 /*
  * LayoutHolder class
@@ -380,6 +378,5 @@ data class LayoutHolder(var rootView: View) {
     /*
      * End of inner class
      */
-
 
 }

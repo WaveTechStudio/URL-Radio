@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.content.Context
@@ -25,7 +24,6 @@ import com.jamal2367.urlradio.Keys
 import com.jamal2367.urlradio.R
 import java.io.IOException
 import java.io.InputStream
-
 
 /*
  * ImageHelper class

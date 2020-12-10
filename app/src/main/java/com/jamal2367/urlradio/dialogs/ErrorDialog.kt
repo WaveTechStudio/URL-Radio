@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.dialogs
 
 import android.content.Context
@@ -24,7 +23,6 @@ import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jamal2367.urlradio.R
 import com.jamal2367.urlradio.helpers.LogHelper
-
 
 /*
  * ErrorDialog class

@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.helpers
 
 import android.app.DownloadManager
@@ -28,7 +27,6 @@ import com.jamal2367.urlradio.core.Collection
 import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.extensions.copy
 import java.util.*
-
 
 /*
  * DownloadHelper object

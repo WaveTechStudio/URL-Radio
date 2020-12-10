@@ -11,13 +11,11 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-
 
 /*
  * PlayerServiceStarterActivity class

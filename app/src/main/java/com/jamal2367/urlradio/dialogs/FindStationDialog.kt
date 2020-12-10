@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.dialogs
 
 import android.app.Activity
@@ -36,7 +35,6 @@ import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.search.RadioBrowserResult
 import com.jamal2367.urlradio.search.RadioBrowserResultAdapter
 import com.jamal2367.urlradio.search.RadioBrowserSearch
-
 
 /*
  * FindStationDialog class

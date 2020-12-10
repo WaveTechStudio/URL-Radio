@@ -11,7 +11,6 @@
  * http://opensource.org/licenses/MIT
  */
 
-
 package com.jamal2367.urlradio.ui
 
 import android.os.Parcelable
@@ -20,7 +19,6 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.gson.annotations.Expose
 import kotlinx.parcelize.Parcelize
 import com.jamal2367.urlradio.Keys
-
 
 /*
  * PlayerState class

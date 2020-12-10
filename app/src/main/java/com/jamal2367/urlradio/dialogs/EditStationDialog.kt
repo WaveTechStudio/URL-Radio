@@ -25,7 +25,6 @@ import com.jamal2367.urlradio.core.Station
 import com.jamal2367.urlradio.helpers.ImageHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 
-
 /*
  * EditStationDialog class
  */
