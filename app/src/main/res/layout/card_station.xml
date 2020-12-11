@@ -67,7 +67,7 @@
             android:contentDescription="@string/descr_card_small_edit_button"
             android:paddingStart="8dp"
             android:paddingTop="8dp"
-            android:paddingEnd="0dp"
+            android:paddingEnd="4dp"
             android:paddingBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/playback_button"
@@ -76,20 +76,15 @@
 
         <ImageView
             android:id="@+id/playback_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:backgroundTint="@color/urlradio_transparent"
-            android:clickable="true"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:background="@color/list_card_delete_background"
             android:contentDescription="@string/descr_card_small_play_button"
-            android:elevation="2dp"
-            android:focusable="true"
-            android:visibility="visible"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_play_circle_outline_36dp" />
+            tools:visibility="visible"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

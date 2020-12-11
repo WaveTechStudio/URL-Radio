@@ -217,8 +217,8 @@ class CollectionAdapter(private val context: Context, private val collectionAdap
     private fun setStationButtons(stationViewHolder: StationViewHolder, station: Station, position: Int) {
         val playbackState: Int = station.playbackState
         when (playbackState) {
-            PlaybackStateCompat.STATE_PLAYING -> stationViewHolder.playButtonView.setImageResource(R.drawable.ic_stop_circle_outline_36dp)
-            else -> stationViewHolder.playButtonView.setImageResource(R.drawable.ic_play_circle_outline_36dp)
+            PlaybackStateCompat.STATE_PLAYING -> stationViewHolder.playButtonView.visibility = View.VISIBLE
+            else -> stationViewHolder.playButtonView.visibility = View.INVISIBLE
         }
         stationViewHolder.stationCardView.setOnClickListener {
             collectionAdapterListener.onPlayButtonTapped(station.uuid, playbackState)
