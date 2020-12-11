@@ -21,11 +21,11 @@
 
         <!-- Custom Font -->
         <item name="android:textViewStyle">@style/SansTextViewStyle</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
     </style>
 
     <style name="SansTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
     </style>
 
     <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
@@ -34,12 +34,12 @@
     </style>
 
     <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
         <item name="android:textColor">@color/urlradio_white</item>
     </style>
 
     <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
         <item name="android:textColor">@color/urlradio_red_dark</item>
     </style>
 
