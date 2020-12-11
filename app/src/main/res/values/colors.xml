@@ -37,8 +37,10 @@
     <color name="urlradio_grey_darker">#FF2D2D2D</color>
     <color name="urlradio_grey_darkest">#FF2A2A2A</color>
 
-    <color name="urlradio_green_card">#FF00C853</color>
-    <color name="urlradio_red_card">#FFDC3D33</color>
+    <color name="urlradio_green_card">#FF4CAF50</color>
+    <color name="urlradio_red_card">#FFF44336</color>
+    <color name="urlradio_green_card_dark">#FF81C784</color>
+    <color name="urlradio_red_card_dark">#FFEF9A9A</color>
 
     <color name="urlradio_red">#FFF44336</color>
     <color name="urlradio_red_dark">#FFEF9A9A</color>
