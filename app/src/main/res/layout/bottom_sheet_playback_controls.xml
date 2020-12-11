@@ -143,6 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:padding="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sheet_streaming_link_icon"
@@ -185,6 +186,7 @@
         android:id="@+id/sheet_next_metadata_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/sheet_previous_metadata_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -196,8 +198,8 @@
         android:id="@+id/sleep_timer_start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:contentDescription="@string/descr_expanded_player_sleep_timer_start_button"
@@ -207,6 +209,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sheet_previous_metadata_button"
         app:srcCompat="@drawable/ic_sleep_timer_24dp" />
+
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sleep_timer_remaining_time"
