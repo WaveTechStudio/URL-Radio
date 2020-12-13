@@ -24,10 +24,7 @@ import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.media.AudioManager
 import android.net.Uri
-import android.os.Bundle
-import android.os.Handler
-import android.os.Parcelable
-import android.os.ResultReceiver
+import android.os.*
 import android.provider.MediaStore
 import android.support.v4.media.MediaBrowserCompat
 import android.support.v4.media.MediaMetadataCompat
@@ -128,6 +125,11 @@ class PlayerFragment: Fragment(), CoroutineScope,
 
         // hide action bar
         (activity as AppCompatActivity).supportActionBar?.hide()
+
+        // set the navigation bar color
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+        activity?.window!!.navigationBarColor = ContextCompat.getColor(requireContext(), R.color.player_sheet_background)
+        }
 
         return rootView
     }

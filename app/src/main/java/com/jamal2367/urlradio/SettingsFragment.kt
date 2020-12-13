@@ -17,10 +17,11 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
+import android.os.*
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
@@ -30,6 +31,7 @@ import com.jamal2367.urlradio.dialogs.YesNoDialog
 import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.LogHelper
 import com.jamal2367.urlradio.helpers.NetworkHelper
+
 
 /*
  * SettingsFragment class
@@ -50,7 +52,9 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
         (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.fragment_settings_title)
         // set the navigation bar color
-        // activity?.window!!.navigationBarColor = ContextCompat.getColor(requireContext(), R.color.app_window_background)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+        activity?.window!!.navigationBarColor = ContextCompat.getColor(requireContext(), R.color.app_window_background)
+        }
     }
 
 
