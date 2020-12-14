@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Адрес потока скопирован в буфер обмена.</string>
+    <string name="toastmessage_double_back_to_exit">Возвращаемся к выходу из приложения</string>
     <string name="toastmessage_error_download_error">Ошибка загрузки</string>
     <string name="toastmessage_error_no_station_found">Не удаётся запустить воспроизведение. Пожалуйста, добавьте сперва радиостанцию.</string>
     <string name="toastmessage_error_no_station_matches_search">Не удаётся найти станцию, которая соответствует вашему поиску.</string>

@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Tautan stream disalin ke papan klip.</string>
+    <string name="toastmessage_double_back_to_exit">Kembali lagi untuk keluar dari aplikasi</string>
     <string name="toastmessage_error_download_error">Gagal mengunduh</string>
     <string name="toastmessage_error_no_station_found">Tidak bisa memulai pemutaran. Silakan tambahkan stasiun radio terlebih dahulu.</string>
     <string name="toastmessage_error_no_station_matches_search">Tidak ditemukan stasiun yang sesuai dengan pencarian anda.</string>

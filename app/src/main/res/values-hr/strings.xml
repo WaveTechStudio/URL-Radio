@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Kopirano u međuspremnik.</string>
+    <string name="toastmessage_double_back_to_exit">Vratite se ponovo za izlaz iz aplikacije</string>
     <string name="toastmessage_error_download_error">Greška pri preuzimanju</string>
     <string name="toastmessage_error_no_station_found">Nemoguće pokrenuti reprodukciju. Najprije dodaj jednu radio stanicu.</string>
     <string name="toastmessage_error_no_station_matches_search">Nemoguće pronaći stanicu koja se poklapa s tvojom pretragom.</string>

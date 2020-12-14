@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">In die Zwischenablage kopiert</string>
+    <string name="toastmessage_double_back_to_exit">Erneut zurück, um die App zu beenden</string>
     <string name="toastmessage_error_download_error">Downloadfehler</string>
     <string name="toastmessage_error_no_station_found">Die Wiedergabe konnte nicht gestartet werden. Bitte füge zuerst einen Radiosender hinzu.</string>
     <string name="toastmessage_error_no_station_matches_search">Es konnte kein Sender gefunden werden, der deiner Suche entspricht</string>

@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Link do transmisji strumieniowej skopiowany do schowka.</string>
+    <string name="toastmessage_double_back_to_exit">Wróć, aby wyjść z aplikacji</string>
     <string name="toastmessage_error_download_error">Błąd pobierania</string>
     <string name="toastmessage_error_no_station_found">Nie można rozpocząć odtwarzania. Najpierw dodaj stację radiową.</string>
     <string name="toastmessage_error_no_station_matches_search">Nie można znaleźć stacji pasującej do wyszukiwania.</string>

@@ -104,6 +104,7 @@
 	
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">הועתק ללוח.</string>
+    <string name="toastmessage_double_back_to_exit">חזור שוב כדי לצאת מהאפליקציה</string>
     <string name="toastmessage_error_download_error">שגיאה בהורדה</string>
     <string name="toastmessage_error_no_station_found">לא ניתן להתחיל את ההפעלה. אנא הוסף תחנת רדיו תחילה.</string>
     <string name="toastmessage_error_no_station_matches_search">לא ניתן למצוא תחנה שתואמת את החיפוש שלך.</string>

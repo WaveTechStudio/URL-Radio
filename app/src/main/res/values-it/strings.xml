@@ -104,6 +104,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Collegamento stream copiato negli appunti.</string>
+    <string name="toastmessage_double_back_to_exit">Torna indietro per uscire dall'applicazione</string>
     <string name="toastmessage_error_download_error">Errore di scaricamento</string>
     <string name="toastmessage_error_no_station_found">Impossibile avviare la riproduzione. Aggiungere una stazione radio.</string>
     <string name="toastmessage_error_no_station_matches_search">Impossibile trovare una stazione che corrisponda alla ricerca.</string>

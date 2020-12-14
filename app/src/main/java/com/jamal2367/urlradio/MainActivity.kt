@@ -3,6 +3,8 @@ package com.jamal2367.urlradio
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 
@@ -11,6 +13,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 
 import androidx.preference.PreferenceManager
+import com.google.android.material.snackbar.Snackbar
 import com.jamal2367.urlradio.helpers.AppThemeHelper
 import com.jamal2367.urlradio.helpers.FileHelper
 import com.jamal2367.urlradio.helpers.LogHelper
@@ -24,6 +27,7 @@ class MainActivity: AppCompatActivity() {
 
     /* Main class variables */
     private lateinit var appBarConfiguration: AppBarConfiguration
+    internal var doubleBackToExitPressedOnce = false
 
     /* Overrides onCreate from AppCompatActivity */
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +63,16 @@ class MainActivity: AppCompatActivity() {
         super.onDestroy()
         // unregister listener for changes in shared preferences
         PreferenceManager.getDefaultSharedPreferences(this as Context).unregisterOnSharedPreferenceChangeListener(sharedPreferenceChangeListener)
+    }
+
+    override fun onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed()
+            return
+        }
+        doubleBackToExitPressedOnce = true
+        Toast.makeText(this, R.string.toastmessage_double_back_to_exit, Toast.LENGTH_SHORT).show()
+        Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
     }
 
     /*

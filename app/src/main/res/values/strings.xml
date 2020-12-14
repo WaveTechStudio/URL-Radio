@@ -107,6 +107,7 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Copied to clipboard.</string>
+    <string name="toastmessage_double_back_to_exit">Press Back again to exit</string>
     <string name="toastmessage_error_download_error">Download error</string>
     <string name="toastmessage_error_no_station_found">Unable to start playback. Please add a radio station first.</string>
     <string name="toastmessage_error_no_station_matches_search">Unable to find a station that matches your search.</string>

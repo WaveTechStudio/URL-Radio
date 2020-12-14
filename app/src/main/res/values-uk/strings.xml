@@ -104,6 +104,7 @@
 	
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Потокове посилання скопійовано до буферу обміну.</string>
+    <string name="toastmessage_double_back_to_exit">Поверніться ще раз, щоб вийти з програми</string>
     <string name="toastmessage_error_download_error">Помилка завантаження</string>
     <string name="toastmessage_error_no_station_found">Не вдається розпочати відтворення. Спочатку додайте радіостанцію.</string>
     <string name="toastmessage_error_no_station_matches_search">Не вдається знайти станцію, яка відповідає вашому пошуку.</string>
