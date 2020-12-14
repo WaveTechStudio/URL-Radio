@@ -104,7 +104,6 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">已复制到剪贴板。</string>
-    <string name="toastmessage_double_back_to_exit">再次返回退出应用程序</string>
     <string name="toastmessage_error_download_error">下载错误</string>
     <string name="toastmessage_error_no_station_found">无法开始回放。请先添加一个广播电台。</string>
     <string name="toastmessage_error_no_station_matches_search">找不到符合您搜索条件的电台。</string>

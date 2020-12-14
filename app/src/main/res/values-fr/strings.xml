@@ -104,7 +104,6 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Lien de diffusion copié dans le presse-papiers.</string>
-    <string name="toastmessage_double_back_to_exit">Retour pour quitter l\'application</string>
     <string name="toastmessage_error_download_error">Erreur de téléchargement</string>
     <string name="toastmessage_error_no_station_found">Impossible de lancer la lecture. Veuillez d\'abord ajouter une station.</string>
     <string name="toastmessage_error_no_station_matches_search">Impossible de trouver une station correspondant à votre recherche.</string>

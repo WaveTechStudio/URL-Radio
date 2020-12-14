@@ -104,7 +104,6 @@
     
 	<!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Se copió el enlace de retransmisión en el portapapeles.</string>
-    <string name="toastmessage_double_back_to_exit">Vuelve de nuevo para salir de la aplicación</string>
     <string name="toastmessage_error_download_error">Error de descarga</string>
     <string name="toastmessage_error_no_station_found">No pudo iniciarse la reproducción. Por favor, agregue primero una emisora.</string>
     <string name="toastmessage_error_no_station_matches_search">No fue posible encontrar una emisora que concuerde con la búsqueda.</string>

@@ -104,7 +104,6 @@
 
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">Strømningslenke kopiert til utklippstavle.</string>
-    <string name="toastmessage_double_back_to_exit">Tilbake igjen for å avslutte appen</string>
     <string name="toastmessage_error_download_error">Nedlastingsfeil</string>
     <string name="toastmessage_error_no_station_found">Kunne ikke starte avspilling. Legg til en radiostasjon først.</string>
     <string name="toastmessage_error_no_station_matches_search">Fant ingen stasjoner som samsvarer med søket ditt.</string>
