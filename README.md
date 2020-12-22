@@ -6,7 +6,7 @@
 #### URL-Radio is free software. It is published under the [MIT open source license](https://opensource.org/licenses/MIT).
 
 
-## Install Transistor
+## Install URL Radio
 #### You can install URL-Radio via Google Play!
 
 [<img src="https://www.skills4school.de/wp-content/uploads/2018/10/badge-googleplay.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.jamal2367.urlradio)
