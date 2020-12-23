@@ -5,7 +5,7 @@ apply plugin: 'kotlin-parcelize'
 android {
 
     compileSdkVersion 30
-    buildToolsVersion '30.0.2'
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId 'com.jamal2367.urlradio'
@@ -24,12 +24,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    packagingOptions {
-        exclude 'META-INF/*'
-        exclude 'DebugProbesKt.bin'
-        exclude '**/kotlin/**'
     }
 
     buildTypes {
