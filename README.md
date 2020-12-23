@@ -1,5 +1,5 @@
 # URL-Radio
-[![GitHub license](https://img.shields.io/github/license/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/blob/master/LICENSE.md) ![GitHub issues](https://img.shields.io/github/issues/jamal2362/URL-Radio) [![Crowdin](https://badges.crowdin.net/url-radio/localized.svg)](https://crowdin.com/project/url-radio)
+[![GitHub license](https://img.shields.io/github/license/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/blob/master/LICENSE.md) [![GitHub issues](https://img.shields.io/github/issues/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/issues) [![Crowdin](https://badges.crowdin.net/url-radio/localized.svg)](https://crowdin.com/project/url-radio)
 
 #### URL-Radio is an app with a minimalistic approach for listening to radio programs over the internet, which may not be to everyone's liking. It has no radio station discovery feature.
 #### URL-Radio only offers a very simple search option and it imports audio streaming links when you tap them in a web browser.
@@ -12,7 +12,7 @@
 [<img src="https://www.skills4school.de/wp-content/uploads/2018/10/badge-googleplay.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.jamal2367.urlradio)
 
 #### Or you can go and grab the latest APK on
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/jamal2362/URL-Radio)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/releases)
 
 
 ## Frequent Questions
