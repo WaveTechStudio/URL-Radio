@@ -108,11 +108,11 @@
     <string name="toastmessage_error_no_station_found">Die Wiedergabe konnte nicht gestartet werden. Bitte füge zuerst einen Radiosender hinzu.</string>
     <string name="toastmessage_error_no_station_matches_search">Es konnte kein Sender gefunden werden, der deiner Suche entspricht</string>
     <string name="toastmessage_error_restart_playback_failed">Die Wiedergabe konnte nicht neu gestartet werden</string>
-    <string name="toastmessage_shortcut_created">Sender auf Startbildschirm platziert</string>
-    <string name="toastmessage_shortcut_not_created">Sender nicht auf Startbildschirm platziert. Das Gerät unterbindet das Platzieren von Verknüpfungen.</string>
+    <string name="toastmessage_shortcut_created">Sender auf Startbildschirm platzieren</string>
+    <string name="toastmessage_shortcut_not_created">Sender konnte nicht auf den Startbildschirm platziert werden. Das Gerät unterbindet das Platzieren von Verknüpfungen.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Bitte zuerst die Wiedergabe starten</string>
-    <string name="toastmessage_station_not_valid">Sender ist ungültig</string>
-    <string name="toastmessage_updating_collection">Sammlung von Sendern aktualisieren</string>
-    <string name="toastmessage_updating_station">Sender aktualisieren</string>
-    <string name="toastmessage_updating_station_images">Senderbilder aktualisieren</string>
+    <string name="toastmessage_station_not_valid">Dieser Sender ist ungültig</string>
+    <string name="toastmessage_updating_collection">Die Sammlung der Sender werden aktualisiert</string>
+    <string name="toastmessage_updating_station">Sender wird aktualisiert</string>
+    <string name="toastmessage_updating_station_images">Senderbilder werden aktualisiert</string>
 </resources>
