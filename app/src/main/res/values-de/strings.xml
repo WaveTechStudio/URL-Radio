@@ -113,5 +113,5 @@
     <string name="toastmessage_station_not_valid">Dieser Sender existiert nicht</string>
     <string name="toastmessage_updating_collection">Alle Sender werden aktualisiert</string>
     <string name="toastmessage_updating_station">Sender wird aktualisiert</string>
-    <string name="toastmessage_updating_station_images">Senderbilder werden aktualisiert</string>
+    <string name="toastmessage_updating_station_images">Alle Senderbilder werden aktualisiert</string>
 </resources>
