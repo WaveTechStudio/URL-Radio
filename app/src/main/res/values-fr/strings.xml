@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Impossible de lancer la lecture. Veuillez d\'abord ajouter une station.</string>
     <string name="toastmessage_error_no_station_matches_search">Impossible de trouver une station correspondant à votre recherche.</string>
     <string name="toastmessage_error_restart_playback_failed">Impossible de relancer la lecture.</string>
-    <string name="toastmessage_shortcut_created">Raccourci créé.</string>
     <string name="toastmessage_shortcut_not_created">Raccourci non créé. Cet appareil ne permet pas la création de raccourcis.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Veuillez d\'abord lancer la lecture.</string>
     <string name="toastmessage_station_not_valid">La station n\'est pas valide.</string>

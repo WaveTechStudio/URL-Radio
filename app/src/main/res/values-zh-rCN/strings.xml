@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">无法开始回放。请先添加一个广播电台。</string>
     <string name="toastmessage_error_no_station_matches_search">找不到符合您搜索条件的电台。</string>
     <string name="toastmessage_error_restart_playback_failed">无法重新回放。</string>
-    <string name="toastmessage_shortcut_created">已创建快捷方式。</string>
     <string name="toastmessage_shortcut_not_created">未创建快捷方式。此设备不允许创建快捷方式。</string>
     <string name="toastmessage_sleep_timer_unable_to_start">请先开始回放。</string>
     <string name="toastmessage_station_not_valid">电台无效。</string>

@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Nemoguće pokrenuti reprodukciju. Najprije dodaj jednu radio stanicu.</string>
     <string name="toastmessage_error_no_station_matches_search">Nemoguće pronaći stanicu koja se poklapa s tvojom pretragom.</string>
     <string name="toastmessage_error_restart_playback_failed">Nemoguće ponovo pokrenuti reprodukciju.</string>
-    <string name="toastmessage_shortcut_created">Prečac stvoren.</string>
     <string name="toastmessage_shortcut_not_created">Prečac nije stvoren. Ovaj uređaj ne dozvoljava izradu prečaca.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Najprije pokreni reprodukciju.</string>
     <string name="toastmessage_station_not_valid">Stanica nije ispravna.</string>

@@ -46,7 +46,6 @@ object ShortcutHelper {
                     .setIntent(createShortcutIntent(context, station.uuid))
                     .build()
             ShortcutManagerCompat.requestPinShortcut(context, shortcut, null)
-            Toast.makeText(context, R.string.toastmessage_shortcut_created, Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(context, R.string.toastmessage_shortcut_not_created, Toast.LENGTH_LONG).show()
         }

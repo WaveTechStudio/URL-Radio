@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Oynatma başlatılamadı. Lütfen önce bir radyo istasyonu ekleyin.</string>
     <string name="toastmessage_error_no_station_matches_search">Aramanızla eşleşen bir istasyon bulunamadı.</string>
     <string name="toastmessage_error_restart_playback_failed">Oynatma yeniden başlatılamadı.</string>
-    <string name="toastmessage_shortcut_created">Kısayol oluşturuldu.</string>
     <string name="toastmessage_shortcut_not_created">Kısayol oluşturulmadı. Bu aygıt kısayolların oluşturulmasına izin vermiyor.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Lütfen önce oynatmayı başlatın.</string>
     <string name="toastmessage_station_not_valid">İstasyon geçerli değil.</string>

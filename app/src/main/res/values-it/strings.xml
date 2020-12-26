@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Impossibile avviare la riproduzione. Aggiungere una stazione radio.</string>
     <string name="toastmessage_error_no_station_matches_search">Impossibile trovare una stazione che corrisponda alla ricerca.</string>
     <string name="toastmessage_error_restart_playback_failed">Impossibile riavviare la riproduzione.</string>
-    <string name="toastmessage_shortcut_created">Scorciatoia creata.</string>
     <string name="toastmessage_shortcut_not_created">Scorciatoia non creata. Questo dispositivo non consente la creazione di scorciatoie.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Prima avviare la riproduzione.</string>
     <string name="toastmessage_station_not_valid">Stazione non valida.</string>

@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Não foi possível iniciar a reprodução. Por favor, adicione uma estação de rádio primeiro.</string>
     <string name="toastmessage_error_no_station_matches_search">Incapaz de encontrar a estação que corresponda com a sua pesquisa.</string>
     <string name="toastmessage_error_restart_playback_failed">Não foi possível reestabelecer a reprodução.</string>
-    <string name="toastmessage_shortcut_created">Atalho criado.</string>
     <string name="toastmessage_shortcut_not_created">Atalho não criado. Este dispositivo não permite a criação de atalhos.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">por favor iniciar reprodução primeiro.</string>
     <string name="toastmessage_station_not_valid">A estação não é válida.</string>

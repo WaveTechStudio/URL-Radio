@@ -111,7 +111,6 @@
     <string name="toastmessage_error_no_station_found">Unable to start playback. Please add a radio station first.</string>
     <string name="toastmessage_error_no_station_matches_search">Unable to find a station that matches your search.</string>
     <string name="toastmessage_error_restart_playback_failed">Unable to restart playback.</string>
-    <string name="toastmessage_shortcut_created">Shortcut created.</string>
     <string name="toastmessage_shortcut_not_created">Shortcut not created. This device does not allow the creation of shortcuts.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Please start playback first.</string>
     <string name="toastmessage_station_not_valid">Station is not valid.</string>

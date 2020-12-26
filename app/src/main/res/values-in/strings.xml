@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">Tidak bisa memulai pemutaran. Silakan tambahkan stasiun radio terlebih dahulu.</string>
     <string name="toastmessage_error_no_station_matches_search">Tidak ditemukan stasiun yang sesuai dengan pencarian anda.</string>
     <string name="toastmessage_error_restart_playback_failed">Tidak bisa memulai ulang pemutaran.</string>
-    <string name="toastmessage_shortcut_created">Pintasan dibuat.</string>
     <string name="toastmessage_shortcut_not_created">Pintasan gagal dibuat. Perangkat ini tidak mengizinkan pintasan di layar Beranda.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Silakan putar terlebih dahulu.</string>
     <string name="toastmessage_station_not_valid">Stasiun tidak valid.</string>

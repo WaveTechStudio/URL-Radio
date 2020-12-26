@@ -108,7 +108,6 @@
     <string name="toastmessage_error_no_station_found">לא ניתן להתחיל את ההפעלה. אנא הוסף תחנת רדיו תחילה.</string>
     <string name="toastmessage_error_no_station_matches_search">לא ניתן למצוא תחנה שתואמת את החיפוש שלך.</string>
     <string name="toastmessage_error_restart_playback_failed">לא ניתן להפעיל מחדש את ההפעלה.</string>
-    <string name="toastmessage_shortcut_created">קיצור הדרך נוצר.</string>
     <string name="toastmessage_shortcut_not_created">קיצור הדרך לא נוצר. מכשיר זה אינו מאפשר יצירת קיצורי דרך.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">התחל השמעה תחילה.</string>
     <string name="toastmessage_station_not_valid">התחנה אינה תקפה.</string>
