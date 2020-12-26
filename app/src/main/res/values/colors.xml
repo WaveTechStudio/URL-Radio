@@ -11,7 +11,7 @@
     <color name="text_default">@color/urlradio_grey_dark</color>
     <color name="text_lightweight">@color/urlradio_grey</color>
 
-    <color name="icon_default">@color/urlradio_grey</color>
+    <color name="icon_default">@color/urlradio_grey_dark</color>
     <color name="icon_lightweight">@color/urlradio_grey_light</color>
 
     <color name="player_button_background">@color/urlradio_red</color>
@@ -40,11 +40,10 @@
     <color name="urlradio_green_card">#FF4CAF50</color>
     <color name="urlradio_red_card">#FFF44336</color>
     <color name="urlradio_green_card_dark">#FF81C784</color>
-    <color name="urlradio_red_card_dark">#FFEF9A9A</color>
+    <color name="urlradio_red_card_dark">#FFE57373</color>
 
     <color name="urlradio_red">#FFF44336</color>
-    <color name="urlradio_red_dark">#FFEF9A9A</color>
-    <color name="urlradio_red_lighter">#FFE57373</color>
+    <color name="urlradio_red_dark">#FFE57373</color>
 
     <color name="urlradio_black">#FF232323</color>
     <color name="urlradio_white">#FFFFFFFF</color>
