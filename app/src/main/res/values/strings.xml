@@ -2,7 +2,7 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">URL Radio</string>
-    <string name="app_version_name" translatable="false">\"Mabel\"</string>
+    <string name="app_version_name" translatable="false">\"Valyx\"</string>
 
     <!-- Descriptions -->
     <string name="descr_app_icon">App icon depicting an old radio</string>
