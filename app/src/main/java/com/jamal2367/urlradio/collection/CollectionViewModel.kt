@@ -39,6 +39,7 @@ class CollectionViewModel(application: Application) : AndroidViewModel(applicati
 
     /* Main class variables */
     val collectionLiveData: MutableLiveData<Collection> = MutableLiveData<Collection>()
+    val collectionSizeLiveData: MutableLiveData<Int> = MutableLiveData<Int>()
     private var modificationDateViewModel: Date = Date()
     private var collectionChangedReceiver: BroadcastReceiver
     private val backgroundJob = Job()
@@ -92,6 +93,8 @@ class CollectionViewModel(application: Application) : AndroidViewModel(applicati
             modificationDateViewModel = collection.modificationDate
             // update collection view model
             collectionLiveData.value = collection
+            // update collection sie
+            collectionSizeLiveData.value = collection.stations.size
         }
     }
 

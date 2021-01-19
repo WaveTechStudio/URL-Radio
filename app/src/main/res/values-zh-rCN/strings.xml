@@ -78,6 +78,8 @@
     <string name="pref_app_version_summary">版本</string>
     <string name="pref_app_version_title">程序版本</string>
     <string name="pref_general_title">常规</string>
+    <string name="pref_m3u_export_summary">将广播电台保存到M3U播放列表文件中，该文件可以导入其他播放器中。</string>
+    <string name="pref_m3u_export_title">导出M3U</string>
     <string name="pref_maintenance_title">维护</string>
     <string name="pref_report_issue_summary">在 Github 上报告漏洞并提出改进建议。</string>
     <string name="pref_report_issue_title">报告问题</string>
@@ -108,6 +110,8 @@
     <string name="toastmessage_error_no_station_found">无法开始回放。请先添加一个广播电台。</string>
     <string name="toastmessage_error_no_station_matches_search">找不到符合您搜索条件的电台。</string>
     <string name="toastmessage_error_restart_playback_failed">无法重新回放。</string>
+    <string name="toastmessage_install_file_helper">请安装文件管理器。</string>
+    <string name="toastmessage_save_m3u">将广播电台另存为M3U。</string>
     <string name="toastmessage_shortcut_not_created">未创建快捷方式。此设备不允许创建快捷方式。</string>
     <string name="toastmessage_sleep_timer_unable_to_start">请先开始回放。</string>
     <string name="toastmessage_station_not_valid">电台无效。</string>

@@ -78,6 +78,8 @@
     <string name="pref_app_version_summary">Version</string>
     <string name="pref_app_version_title">Version de l\'application</string>
     <string name="pref_general_title">Général</string>
+    <string name="pref_m3u_export_summary">Enregistrez vos stations de radio dans un fichier de playlist M3U qui peut être importé dans d\'autres lecteurs.</string>
+    <string name="pref_m3u_export_title">Exporter M3U</string>
     <string name="pref_maintenance_title">Maintenance</string>
     <string name="pref_report_issue_summary">Signalez des problèmes ou proposez des améliorations sur GitHub.</string>
     <string name="pref_report_issue_title">Signaler un problème</string>
@@ -108,6 +110,8 @@
     <string name="toastmessage_error_no_station_found">Impossible de lancer la lecture. Veuillez d\'abord ajouter une station.</string>
     <string name="toastmessage_error_no_station_matches_search">Impossible de trouver une station correspondant à votre recherche.</string>
     <string name="toastmessage_error_restart_playback_failed">Impossible de relancer la lecture.</string>
+    <string name="toastmessage_install_file_helper">Veuillez installer un gestionnaire de fichiers.</string>
+    <string name="toastmessage_save_m3u">Sauvegarde des stations de radio sous le nom de M3U.</string>
     <string name="toastmessage_shortcut_not_created">Raccourci non créé. Cet appareil ne permet pas la création de raccourcis.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Veuillez d\'abord lancer la lecture.</string>
     <string name="toastmessage_station_not_valid">La station n\'est pas valide.</string>

@@ -163,6 +163,7 @@ object Keys {
 
     // file names and extensions
     const val COLLECTION_FILE: String = "collection.json"
+    const val COLLECTION_M3U_FILE: String = "collection.m3u"
     const val STATION_IMAGE_FILE: String = "station-image.jpg"
     const val DEBUG_LOG_FILE: String = "log-can-be-deleted.txt"
     const val URLRADIO_LEGACY_STATION_FILE_EXTENSION: String = ".m3u"
@@ -190,6 +191,7 @@ object Keys {
     // requests
     const val REQUEST_LOAD_IMAGE: Int = 1
     const val REQUEST_UPDATE_COLLECTION: Int = 2
+    const val REQUEST_SAVE_M3U: Int = 3
     const val PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE: Int = 23
     const val PERMISSION_REQUEST_IMAGE_PICKER_READ_EXTERNAL_STORAGE = 42
 

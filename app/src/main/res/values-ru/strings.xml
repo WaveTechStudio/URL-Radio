@@ -78,6 +78,8 @@
     <string name="pref_app_version_summary">Версия</string>
     <string name="pref_app_version_title">Версия приложения</string>
     <string name="pref_general_title">Главное</string>
+    <string name="pref_m3u_export_summary">Сохраните ваши радиостанции в файл плейлиста M3U, который можно импортировать в другие проигрыватели.</string>
+    <string name="pref_m3u_export_title">Экспорт M3U</string>
     <string name="pref_maintenance_title">Обслуживание</string>
     <string name="pref_report_issue_summary">Сообщайте об ошибках и предлагайте улучшения на GitHub.</string>
     <string name="pref_report_issue_title">Сообщить о проблеме</string>
@@ -108,6 +110,8 @@
     <string name="toastmessage_error_no_station_found">Не удаётся запустить воспроизведение. Пожалуйста, добавьте сперва радиостанцию.</string>
     <string name="toastmessage_error_no_station_matches_search">Не удаётся найти станцию, которая соответствует вашему поиску.</string>
     <string name="toastmessage_error_restart_playback_failed">Невозможно перезапустить воспроизведение.</string>
+    <string name="toastmessage_install_file_helper">Пожалуйста, установите файловый менеджер.</string>
+    <string name="toastmessage_save_m3u">Сохранение радиостанций как M3U.</string>
     <string name="toastmessage_shortcut_not_created">Ярлык не создан. Устройство не позволяет создавать ярлыки.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Пожалуйста, запустите сперва воспроизведение.</string>
     <string name="toastmessage_station_not_valid">Станция не действительна.</string>

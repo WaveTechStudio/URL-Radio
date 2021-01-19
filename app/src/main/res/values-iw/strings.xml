@@ -2,7 +2,7 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">URL Radio</string>
-	
+
     <!-- Descriptions -->
     <string name="descr_app_icon">סמל אפליקציה המתאר רדיו ישן</string>
     <string name="descr_card_settings_button">הגדרות</string>
@@ -19,7 +19,7 @@
     <string name="descr_player_playback_button">הפעל/השהה</string>
     <string name="descr_player_station_image">תמונת תחנה</string>
     <string name="descr_station_name_example">דוגמה FM</string>
-	
+
     <!-- Dialogs -->
     <string name="dialog_button_rename">שנה שם</string>
     <string name="dialog_button_save">שמור שינויים</string>
@@ -46,16 +46,16 @@
     <string name="dialog_yes_no_positive_button_remove_station">הסר</string>
     <string name="dialog_yes_no_positive_button_update_collection">עדכן</string>
     <string name="dialog_yes_no_positive_button_update_covers">עדכן</string>
-	
+
     <!-- Fragment -->
     <string name="fragment_settings_title">הגדרות</string>
-	
+
     <!-- Menu Entries -->
     <string name="menu_icon">שינוי סמל</string>
     <string name="menu_rename">שנה שם</string>
     <string name="menu_shortcut">הוסף למסך הבית</string>
     <string name="menu_update">עדכן תחנה</string>
-	
+
     <!-- Notification -->
     <string name="notification_now_playing_channel_description">פקדי השמעה, שם תחנה ותמונה.</string>
     <string name="notification_now_playing_channel_name">פקדי השמעה</string>
@@ -63,21 +63,23 @@
     <string name="notification_skip_to_next">הבא</string>
     <string name="notification_skip_to_previous">קודם</string>
     <string name="notification_stop">עצור</string>
-	
+
     <!-- Onboarding -->
     <string name="onboarding_app_description">אפליקציית רדיו</string>
     <string name="onboarding_app_get_started">להתחיל</string>
     <string name="onboarding_app_import_running">מייבא את התחנות שלך. המתן בבקשה.</string>
-	
+
     <!-- Player -->
     <string name="player_sheet_h2_station_metadata">מנגן כרגע</string>
     <string name="player_sheet_h2_stream_url">קישור הזרמה</string>
-	
+
     <!-- Settings -->
     <string name="pref_about_title">אודות</string>
     <string name="pref_app_version_summary">גרסה</string>
     <string name="pref_app_version_title">גרסת האפליקציה</string>
     <string name="pref_general_title">כללי</string>
+    <string name="pref_m3u_export_summary">שמור את תחנות הרדיו שלך בקובץ רשימת השמעה M3U שניתן לייבא לנגנים אחרים.</string>
+    <string name="pref_m3u_export_title">ייצא M3U</string>
     <string name="pref_maintenance_title">תחזוקה</string>
     <string name="pref_report_issue_summary">דווח על באגים והצעות שיפור ב- GitHub.</string>
     <string name="pref_report_issue_title">דווח על בעייה</string>
@@ -90,24 +92,26 @@
     <string name="pref_update_collection_title">עדכן תחנות</string>
     <string name="pref_update_station_images_summary">הורד את הגרסה האחרונה של כל תמונות התחנה.</string>
     <string name="pref_update_station_images_title">עדכן תמונות תחנה</string>
-	
+
     <!-- App Shortcuts -->
     <string name="shortcut_last_station_disabled_message">קיצור הדרך להפעלת התחנה האחרונה מושבת.</string>
     <string name="shortcut_last_station_long_label">הפעל תחנה אחרונה</string>
     <string name="shortcut_last_station_short_label">תחנה אחרונה</string>
-	
+
     <!-- Station List -->
     <string name="station_list_button_add_new_station">הוסף תחנה חדשה</string>
-	
+
     <!-- Toastalert -->
     <string name="toastalert_no_image_picker">אין בורר תמונות זמין. שקול להתקין יישום גלריה.</string>
-	
+
     <!-- Toasts -->
     <string name="toastmessage_copied_to_clipboard">הועתק ללוח.</string>
     <string name="toastmessage_error_download_error">שגיאה בהורדה</string>
     <string name="toastmessage_error_no_station_found">לא ניתן להתחיל את ההפעלה. אנא הוסף תחנת רדיו תחילה.</string>
     <string name="toastmessage_error_no_station_matches_search">לא ניתן למצוא תחנה שתואמת את החיפוש שלך.</string>
     <string name="toastmessage_error_restart_playback_failed">לא ניתן להפעיל מחדש את ההפעלה.</string>
+    <string name="toastmessage_install_file_helper">אנא התקן מנהל קבצים.</string>
+    <string name="toastmessage_save_m3u">שמירת תחנות רדיו כ- M3U.</string>
     <string name="toastmessage_shortcut_not_created">קיצור הדרך לא נוצר. מכשיר זה אינו מאפשר יצירת קיצורי דרך.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">התחל השמעה תחילה.</string>
     <string name="toastmessage_station_not_valid">התחנה אינה תקפה.</string>

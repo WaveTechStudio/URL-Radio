@@ -78,6 +78,8 @@
     <string name="pref_app_version_summary">Wersja</string>
     <string name="pref_app_version_title">Wersja aplikacji</string>
     <string name="pref_general_title">Ogólne</string>
+    <string name="pref_m3u_export_summary">Zapisz swoje stacje radiowe w pliku listy odtwarzania M3U, który można zaimportować do innych odtwarzaczy.</string>
+    <string name="pref_m3u_export_title">Wywóz M3U</string>
     <string name="pref_maintenance_title">Zarządzanie</string>
     <string name="pref_report_issue_summary">Zgłaszaj błędy i sugeruj ulepszenia na github.</string>
     <string name="pref_report_issue_title">Zgłoś problem</string>
@@ -108,6 +110,8 @@
     <string name="toastmessage_error_no_station_found">Nie można rozpocząć odtwarzania. Najpierw dodaj stację radiową.</string>
     <string name="toastmessage_error_no_station_matches_search">Nie można znaleźć stacji pasującej do wyszukiwania.</string>
     <string name="toastmessage_error_restart_playback_failed">Nie można ponownie uruchomić odtwarzania.</string>
+    <string name="toastmessage_install_file_helper">Proszę zainstalować menedżer plików.</string>
+    <string name="toastmessage_save_m3u">Zapisywanie stacji radiowych jako M3U.</string>
     <string name="toastmessage_shortcut_not_created">Skrót nie został utworzony. To urządzenie nie pozwala na tworzenie skrótów.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Najpierw zacznij odtwarzanie.</string>
     <string name="toastmessage_station_not_valid">Stacja jest nieprawidłowa.</string>

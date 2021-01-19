@@ -78,6 +78,8 @@
     <string name="pref_app_version_summary">Verzija</string>
     <string name="pref_app_version_title">Verzija programa</string>
     <string name="pref_general_title">Opće</string>
+    <string name="pref_m3u_export_summary">Spremite svoje radio stanice u datoteku popisa za reprodukciju M3U koju možete uvesti u druge uređaje za reprodukciju.</string>
+    <string name="pref_m3u_export_title">Izvoz M3U</string>
     <string name="pref_maintenance_title">Održavanje</string>
     <string name="pref_report_issue_summary">Prijavi greške i predloži poboljšanja na GitHubu.</string>
     <string name="pref_report_issue_title">Prijavi problem</string>
@@ -108,6 +110,8 @@
     <string name="toastmessage_error_no_station_found">Nemoguće pokrenuti reprodukciju. Najprije dodaj jednu radio stanicu.</string>
     <string name="toastmessage_error_no_station_matches_search">Nemoguće pronaći stanicu koja se poklapa s tvojom pretragom.</string>
     <string name="toastmessage_error_restart_playback_failed">Nemoguće ponovo pokrenuti reprodukciju.</string>
+    <string name="toastmessage_install_file_helper">Molimo instalirajte upravitelj datoteka.</string>
+    <string name="toastmessage_save_m3u">Spremanje radio stanica kao M3U.</string>
     <string name="toastmessage_shortcut_not_created">Prečac nije stvoren. Ovaj uređaj ne dozvoljava izradu prečaca.</string>
     <string name="toastmessage_sleep_timer_unable_to_start">Najprije pokreni reprodukciju.</string>
     <string name="toastmessage_station_not_valid">Stanica nije ispravna.</string>
