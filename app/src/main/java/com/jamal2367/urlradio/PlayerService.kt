@@ -680,11 +680,11 @@ class PlayerService : MediaBrowserServiceCompat(), Player.EventListener, Metadat
      * Custom AnalyticsListener that enables AudioFX equalizer integration
      */
     private var analyticsListener = object: AnalyticsListener {
-        override fun onAudioSessionId(eventTime: AnalyticsListener.EventTime, audioSessionId: Int) {
-            super.onAudioSessionId(eventTime, audioSessionId)
+        override fun onAudioSessionIdChanged(eventTime: AnalyticsListener.EventTime, audioSessionIdChanged: Int) {
+            super.onAudioSessionIdChanged(eventTime, audioSessionIdChanged)
             // integrate with system equalizer (AudioFX)
             val intent: Intent = Intent(AudioEffect.ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION)
-            intent.putExtra(AudioEffect.EXTRA_AUDIO_SESSION, audioSessionId)
+            intent.putExtra(AudioEffect.EXTRA_AUDIO_SESSION, audioSessionIdChanged)
             intent.putExtra(AudioEffect.EXTRA_PACKAGE_NAME, packageName)
             sendBroadcast(intent)
         }
