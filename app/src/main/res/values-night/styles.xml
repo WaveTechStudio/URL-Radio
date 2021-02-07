@@ -28,19 +28,21 @@
         <item name="android:fontFamily">@font/google_sans_regular</item>
     </style>
 
-    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
         <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
     </style>
 
-    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:fontFamily">@font/google_sans_medium</item>
         <item name="android:textColor">@color/urlradio_white</item>
+
     </style>
 
-    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:fontFamily">@font/google_sans_medium</item>
         <item name="android:textColor">@color/urlradio_red_dark</item>
+        <item name="rippleColor">@color/urlradio_red_ripple</item>
     </style>
 
 </resources>

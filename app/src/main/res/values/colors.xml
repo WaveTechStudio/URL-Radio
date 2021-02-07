@@ -44,6 +44,7 @@
 
     <color name="urlradio_red">#FFF44336</color>
     <color name="urlradio_red_dark">#FFE57373</color>
+    <color name="urlradio_red_ripple">#FFEF5350</color>
 
     <color name="urlradio_black">#FF232323</color>
     <color name="urlradio_white">#FFFFFFFF</color>
