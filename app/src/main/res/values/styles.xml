@@ -22,6 +22,7 @@
         <!-- Custom Font -->
         <item name="android:textViewStyle">@style/SansTextViewStyle</item>
         <item name="android:fontFamily">@font/google_sans_regular</item>
+
     </style>
 
     <style name="SansTextViewStyle" parent="android:Widget.TextView">
@@ -35,7 +36,7 @@
 
     <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:fontFamily">@font/google_sans_medium</item>
-        <item name="android:textColor">@color/urlradio_black</item>
+        <item name="android:textColor">@color/icon_default</item>
     </style>
 
     <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
