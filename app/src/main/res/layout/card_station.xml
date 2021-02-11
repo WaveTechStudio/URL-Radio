@@ -26,7 +26,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/RoundedCorners"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App"
             app:srcCompat="@drawable/ic_default_station_image_24dp" />
 
         <com.google.android.material.textview.MaterialTextView
