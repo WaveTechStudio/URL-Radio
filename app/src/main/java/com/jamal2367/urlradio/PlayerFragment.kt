@@ -36,7 +36,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.os.bundleOf
 import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -52,6 +51,8 @@ import com.jamal2367.urlradio.dialogs.FindStationDialog
 import com.jamal2367.urlradio.dialogs.YesNoDialog
 import com.jamal2367.urlradio.extensions.isActive
 import com.jamal2367.urlradio.helpers.*
+import com.jamal2367.urlradio.playback.PlayerController
+import com.jamal2367.urlradio.playback.PlayerService
 import com.jamal2367.urlradio.ui.LayoutHolder
 import com.jamal2367.urlradio.ui.PlayerState
 import java.util.*
@@ -76,6 +77,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
     private lateinit var collectionViewModel: CollectionViewModel
     private lateinit var layout: LayoutHolder
     private lateinit var collectionAdapter: CollectionAdapter
+    private lateinit var playerController: PlayerController
     private var collection: Collection = Collection()
     private var playerServiceConnected: Boolean = false
     private var onboarding: Boolean = false
@@ -197,7 +199,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
     override fun onStop() {
         super.onStop()
         // (see "stay in sync with the MediaSession")
-        MediaControllerCompat.getMediaController(activity as Activity)?.unregisterCallback(mediaControllerCallback)
+        playerController.unregisterCallback(mediaControllerCallback)
         mediaBrowser.disconnect()
         playerServiceConnected = false
     }
@@ -370,16 +372,16 @@ class PlayerFragment: Fragment(), CoroutineScope,
 
         // set up sleep timer start button
         layout.sheetSleepTimerStartButtonView.setOnClickListener {
-            val playbackState: PlaybackStateCompat = MediaControllerCompat.getMediaController(activity as Activity).playbackState
+            val playbackState: PlaybackStateCompat = playerController.getPlaybackState()
             when (playbackState.isActive) {
-                true -> MediaControllerCompat.getMediaController(activity as Activity).sendCommand(Keys.CMD_START_SLEEP_TIMER, null, null)
+                true -> playerController.startSleepTimer()
                 false -> Toast.makeText(activity as Context, R.string.toastmessage_sleep_timer_unable_to_start, Toast.LENGTH_LONG).show()
             }
         }
 
         // set up sleep timer cancel button
         layout.sheetSleepTimerCancelButtonView.setOnClickListener {
-            MediaControllerCompat.getMediaController(activity as Activity).sendCommand(Keys.CMD_CANCEL_SLEEP_TIMER, null, null)
+            playerController.cancelSleepTimer()
             layout.sleepTimerRunningViews.isGone = true
         }
 
@@ -393,17 +395,14 @@ class PlayerFragment: Fragment(), CoroutineScope,
         // get player state
         playerState = PreferencesHelper.loadPlayerState(activity as Context)
 
-        // get reference to media controller
-        val mediaController = MediaControllerCompat.getMediaController(activity as Activity)
-
         // main play/pause button
         layout.playButtonView.setOnClickListener {
             onPlayButtonTapped(playerState.stationUuid, playerState.playbackState)
-            // onPlayButtonTapped(playerState.stationUuid, mediaController.playbackState.state) todo remove
+            //onPlayButtonTapped(playerState.stationUuid, mediaController.playbackState.state) todo remove
         }
 
         // register a callback to stay in sync
-        mediaController.registerCallback(mediaControllerCallback)
+        playerController.registerCallback(mediaControllerCallback)
     }
 
 
@@ -441,8 +440,8 @@ class PlayerFragment: Fragment(), CoroutineScope,
         layout.updatePlayerViews(activity as Context, station, playerState.playbackState)
         // start / pause playback
         when (startPlayback) {
-            true -> MediaControllerCompat.getMediaController(activity as Activity).transportControls.playFromMediaId(station.uuid, null)
-            false -> MediaControllerCompat.getMediaController(activity as Activity).transportControls.pause()
+            true -> playerController.play(station.uuid)
+            false -> playerController.pause()
         }
     }
 
@@ -499,13 +498,13 @@ class PlayerFragment: Fragment(), CoroutineScope,
     private fun handleStartPlayer() {
         val intent: Intent = (activity as Activity).intent
         if (intent.hasExtra(Keys.EXTRA_START_LAST_PLAYED_STATION)) {
-            MediaControllerCompat.getMediaController(activity as Activity).transportControls.playFromMediaId(playerState.stationUuid, null)
+            playerController.play(playerState.stationUuid)
         } else if (intent.hasExtra(Keys.EXTRA_STATION_UUID)) {
-            val uuid: String? = intent.getStringExtra(Keys.EXTRA_STATION_UUID)
-            MediaControllerCompat.getMediaController(activity as Activity).transportControls.playFromMediaId(uuid, null)
+            val uuid: String = intent.getStringExtra(Keys.EXTRA_STATION_UUID) ?: String()
+            playerController.play(uuid)
         } else if (intent.hasExtra(Keys.EXTRA_STREAM_URI)) {
             val streamUri: String = intent.getStringExtra(Keys.EXTRA_STREAM_URI) ?: String()
-            MediaControllerCompat.getMediaController(activity as Activity).sendCommand(Keys.CMD_PLAY_STREAM, bundleOf(Pair(Keys.KEY_STREAM_URI, streamUri)), null)
+            playerController.playStreamDirectly(streamUri)
         }
     }
 
@@ -577,6 +576,8 @@ class PlayerFragment: Fragment(), CoroutineScope,
                 val mediaController = MediaControllerCompat(activity as Context, token)
                 // save the controller
                 MediaControllerCompat.setMediaController(activity as Activity, mediaController)
+                // initialize playerController
+                playerController = PlayerController(mediaController)
             }
             playerServiceConnected = true
 
@@ -657,7 +658,7 @@ class PlayerFragment: Fragment(), CoroutineScope,
     private val periodicProgressUpdateRequestRunnable: Runnable = object : Runnable {
         override fun run() {
             // request current playback position
-            MediaControllerCompat.getMediaController(activity as Activity).sendCommand(Keys.CMD_REQUEST_PROGRESS_UPDATE, null, resultReceiver)
+            playerController.requestProgressUpdate(resultReceiver)
             // use the handler to start runnable again after specified delay
             handler.postDelayed(this, 500)
         }

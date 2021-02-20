@@ -38,8 +38,8 @@ object Keys {
     val PLAYBACK_SPEEDS = arrayOf(1.0f, 1.2f, 1.4f, 1.6f, 1.8f, 2.0f)
 
     // notification
-    const val NOTIFICATION_NOW_PLAYING_ID: Int = 42
-    const val NOTIFICATION_NOW_PLAYING_CHANNEL: String = "notificationChannelIdPlaybackChannel"
+    const val NOW_PLAYING_NOTIFICATION_ID: Int = 42
+    const val NOW_PLAYING_NOTIFICATION_CHANNEL_ID: String = "notificationChannelIdPlaybackChannel"
 
     // intent actions
     const val ACTION_SHOW_PLAYER: String = "com.jamal2367.urlradio.action.SHOW_PLAYER"
