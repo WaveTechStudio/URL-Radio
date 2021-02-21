@@ -46,11 +46,11 @@ class NotificationHelper(private val context: Context, sessionToken: MediaSessio
     private val serviceJob = SupervisorJob()
     private val serviceScope = CoroutineScope(Main + serviceJob)
     private val notificationManager: PlayerNotificationManager
+    private val mediaController: MediaControllerCompat = MediaControllerCompat(context, sessionToken)
 
 
     /* Constructor */
     init {
-        val mediaController = MediaControllerCompat(context, sessionToken)
         notificationManager = PlayerNotificationManager.createWithNotificationChannel(
                 context,
                 Keys.NOW_PLAYING_NOTIFICATION_CHANNEL_ID,
@@ -64,7 +64,7 @@ class NotificationHelper(private val context: Context, sessionToken: MediaSessio
             setMediaSessionToken(sessionToken)
             setSmallIcon(R.drawable.ic_notification_app_icon_white_24dp)
             setUsePlayPauseActions(true)
-            setControlDispatcher(DefaultControlDispatcher(0L, 0L)) // hide fastforward and reweind
+            setControlDispatcher(Dispatcher())
             setUseStopAction(true) // set true to display the dismiss button
             setUsePreviousAction(false)
             setUsePreviousActionInCompactView(false)
@@ -94,7 +94,22 @@ class NotificationHelper(private val context: Context, sessionToken: MediaSessio
 
 
     /*
-     * Inner class: Create content of notification from metaddata
+     * Inner class: Intercept stop button tap
+     */
+    private inner class Dispatcher: DefaultControlDispatcher(0L, 0L /* hide fast forward and rewind */) {
+        override fun dispatchStop(player: Player, reset: Boolean): Boolean {
+            // Default implementation see: https://github.com/google/ExoPlayer/blob/b1000940eaec9e1202d9abf341a48a58b728053f/library/core/src/main/java/com/google/android/exoplayer2/DefaultControlDispatcher.java#L137
+            mediaController.sendCommand(Keys.CMD_DISMISS_NOTIFICATION, null, null)
+            return true
+        }
+    }
+    /*
+     * End of inner class
+     */
+
+
+    /*
+     * Inner class: Create content of notification from metadata
      */
     private inner class DescriptionAdapter(private val controller: MediaControllerCompat) : PlayerNotificationManager.MediaDescriptionAdapter {
 
