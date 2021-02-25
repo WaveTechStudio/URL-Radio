@@ -645,7 +645,6 @@ class PlayerService(): MediaBrowserServiceCompat() {
                     return true
                 }
                 KeyEvent.KEYCODE_MEDIA_PREVIOUS -> {
-                    skipToPreviousStation()
                     if (event.action == KeyEvent.ACTION_UP) skipToPreviousStation()
                     return true
                 }
