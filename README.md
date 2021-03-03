@@ -12,7 +12,7 @@
 [<img src="https://www.skills4school.de/wp-content/uploads/2018/10/badge-googleplay.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=com.jamal2367.urlradio)
 
 #### Or you can go and grab the latest APK on
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jamal2362/URL-Radio)](https://github.com/jamal2362/URL-Radio/releases) [![GitHub all releases](https://img.shields.io/github/downloads/jamal2362/URL-Radio/total)](https://github.com/jamal2362/URL-Radio/releases)
 
 
 ## Frequent Questions
