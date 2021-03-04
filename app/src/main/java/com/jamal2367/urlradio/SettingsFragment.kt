@@ -88,7 +88,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         }
 
         // set up "Update Stations" preference
-        val preferenceUpdateCollection: Preference = Preference(activity as Context)
+        val preferenceUpdateCollection = Preference(activity as Context)
         preferenceUpdateCollection.title = getString(R.string.pref_update_collection_title)
         preferenceUpdateCollection.setIcon(R.drawable.ic_cloud_download_24dp)
         preferenceUpdateCollection.summary = getString(R.string.pref_update_collection_summary)
@@ -99,7 +99,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         }
 
         // set up "Update Station Images" preference
-        val preferenceUpdateStationImages: Preference = Preference(activity as Context)
+        val preferenceUpdateStationImages = Preference(activity as Context)
         preferenceUpdateStationImages.title = getString(R.string.pref_update_station_images_title)
         preferenceUpdateStationImages.setIcon(R.drawable.ic_image_24dp)
         preferenceUpdateStationImages.summary = getString(R.string.pref_update_station_images_summary)
@@ -110,7 +110,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         }
 
         // set up "App Version" preference
-        val preferenceAppVersion: Preference = Preference(context)
+        val preferenceAppVersion = Preference(context)
         preferenceAppVersion.title = getString(R.string.pref_app_version_title)
         preferenceAppVersion.setIcon(R.drawable.ic_info_24dp)
         preferenceAppVersion.summary = "${getString(R.string.pref_app_version_summary)} ${BuildConfig.VERSION_NAME} (${getString(R.string.app_version_name)})"
@@ -124,7 +124,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         }
 
         // set up "M3U Export" preference
-        val preferenceM3uExport: Preference = Preference(activity as Context)
+        val preferenceM3uExport = Preference(activity as Context)
         preferenceM3uExport.title = getString(R.string.pref_m3u_export_title)
         preferenceM3uExport.setIcon(R.drawable.ic_save_24dp)
         preferenceM3uExport.summary = getString(R.string.pref_m3u_export_summary)
@@ -134,7 +134,7 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
         }
 
         // set up "Report Issue" preference
-        val preferenceReportIssue: Preference = Preference(context)
+        val preferenceReportIssue = Preference(context)
         preferenceReportIssue.title = getString(R.string.pref_report_issue_title)
         preferenceReportIssue.setIcon(R.drawable.ic_bug_report_24dp)
         preferenceReportIssue.summary = getString(R.string.pref_report_issue_summary)
@@ -150,17 +150,17 @@ class SettingsFragment: PreferenceFragmentCompat(), YesNoDialog.YesNoDialogListe
 
 
         // set preference categories
-        val preferenceCategoryGeneral: PreferenceCategory = PreferenceCategory(activity as Context)
+        val preferenceCategoryGeneral = PreferenceCategory(activity as Context)
         preferenceCategoryGeneral.title = getString(R.string.pref_general_title)
         preferenceCategoryGeneral.contains(preferenceThemeSelection)
 
-        val preferenceCategoryMaintenance: PreferenceCategory = PreferenceCategory(activity as Context)
+        val preferenceCategoryMaintenance = PreferenceCategory(activity as Context)
         preferenceCategoryMaintenance.title = getString(R.string.pref_maintenance_title)
         preferenceCategoryMaintenance.contains(preferenceUpdateCollection)
         preferenceCategoryMaintenance.contains(preferenceUpdateStationImages)
         preferenceCategoryMaintenance.contains(preferenceM3uExport)
 
-        val preferenceCategoryAbout: PreferenceCategory = PreferenceCategory(context)
+        val preferenceCategoryAbout = PreferenceCategory(context)
         preferenceCategoryAbout.title = getString(R.string.pref_about_title)
         preferenceCategoryAbout.contains(preferenceAppVersion)
         preferenceCategoryAbout.contains(preferenceReportIssue)
