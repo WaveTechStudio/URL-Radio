@@ -255,6 +255,7 @@ object FileHelper {
             true -> try {
                 collection = getCustomGson().fromJson(json, collection::class.java)
             } catch (e: Exception) {
+                LogHelper.e(TAG, "Error Reading collection.\nContent: $json")
                 e.printStackTrace()
             }
         }
