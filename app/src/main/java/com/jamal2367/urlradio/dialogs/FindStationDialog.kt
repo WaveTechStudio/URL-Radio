@@ -193,14 +193,14 @@ class FindStationDialog (private var context: Context, private var listener: Fin
             // handle direct URL input
             remoteStationLocation = query
             activateAddButton()
-        } else if (query.contains(" ") || query.length > 2 ) {
+        } else if (query.contains(" ") || query.length > 1 ) {
             // show progress indicator
             showProgressIndicator()
             // handle search string input - delay request to manage server load (not sure if necessary)
             handler.postDelayed({
                 // only start search if query is the same as one second ago
                 if (currentSearchString == query) radioBrowserSearch.searchStation(context, query, Keys.SEARCH_TYPE_BY_KEYWORD)
-            }, 1000)
+            }, 100)
         } else if (query.isEmpty()) {
             resetLayout(clearAdapter = true)
         }
