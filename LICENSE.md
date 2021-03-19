@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright (c) 2020 - jamal2367.de
+Copyright (c) 2021 - android-freaks.de
 --------------------------------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
