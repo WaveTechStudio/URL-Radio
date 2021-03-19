@@ -100,7 +100,6 @@ class RadioBrowserResultAdapter(private val listener: RadioBrowserResultAdapterL
     }
 
 
-
     /*
      * Inner class: ViewHolder for a radio station search result
      */
