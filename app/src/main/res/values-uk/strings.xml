@@ -6,7 +6,7 @@
     <!-- Descriptions -->
     <string name="descr_app_icon">Значок програми із зображенням старого радіо</string>
     <string name="descr_card_settings_button">Налаштування</string>
-    <string name="descr_card_small_edit_button">Правити</string>
+    <string name="descr_card_small_edit_button">Редагувати</string>
     <string name="descr_card_small_play_button">Програвати/Зупинити</string>
     <string name="descr_card_starred_station">Обрана станція</string>
     <string name="descr_card_station_image">Зображення станції</string>
@@ -38,7 +38,7 @@
     <string name="dialog_generic_button_okay">Гаразд</string>
     <string name="dialog_generic_details_button">Показати подробиці</string>
     <string name="dialog_opml_import_details_default">Подробиці недоступні</string>
-    <string name="dialog_rename_station_input_hint">Ввести нову назву</string>
+    <string name="dialog_rename_station_input_hint">Введіть нову назву</string>
     <string name="dialog_yes_no_message_remove_station">Видалити цю станцію\?</string>
     <string name="dialog_yes_no_message_update_collection">Шукати зміни\?</string>
     <string name="dialog_yes_no_message_update_station_images">Завантажити останню версію всіх зображень станцій\?</string>
@@ -53,7 +53,7 @@
     <!-- Menu Entries -->
     <string name="menu_icon">Змінити піктограму</string>
     <string name="menu_rename">Перейменувати</string>
-    <string name="menu_shortcut">Розмістити на домашньому екрані</string>
+    <string name="menu_shortcut">Розмістити на головному екрані</string>
     <string name="menu_update">Оновити станцію</string>
 	
     <!-- Notification -->
@@ -77,7 +77,7 @@
     <string name="pref_about_title">Про нас</string>
     <string name="pref_app_version_summary">Версія</string>
     <string name="pref_app_version_title">Версія застосунку</string>
-    <string name="pref_general_title">Загальне</string>
+    <string name="pref_general_title">Загальні</string>
     <string name="pref_m3u_export_summary">Збережіть свої радіостанції у файлі списку відтворення M3U, який можна імпортувати в інші програвачі.</string>
     <string name="pref_m3u_export_title">Експорт M3U</string>
     <string name="pref_maintenance_title">Обслуговування</string>
